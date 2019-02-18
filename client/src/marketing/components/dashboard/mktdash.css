@@ -1,0 +1,363 @@
+.btn-campaignDetails {
+	width: 120px;
+	height: 30px;
+	padding-top: 2px;
+	padding-left: 5px;
+	margin-top: 3px;
+	margin-left: 23px;
+	padding-bottom: 9px;
+	background-color: #53889e;
+	border: none;
+	color: white;
+	font-size: 11pt;
+	box-shadow: 3px 3px 0px 0px #3f4c60;
+} 
+
+.btn-campaignParticipate {
+	width: 120px;
+	height: 30px;
+	padding-top: 2px;
+	padding-left: 5px;
+	margin-top: 3px;
+	margin-left: 23px;
+	padding-bottom: 9px;
+	background-color: #3b7a0d;
+	border: none;
+	color: white;
+	font-size: 11pt;
+	box-shadow: 3px 3px 0px 0px #3f4c60;
+}
+
+.btn-createFactory {
+	width: 140px;
+	height: 28px;
+	padding-top: 4px;
+	padding-left: 5px;
+	margin-top: 3px;
+	margin-left: 23px;
+	padding-bottom: 9px;
+	background-color: #bec4ce;
+	border: none;
+	color: black;
+	font-size: 10pt;
+	box-shadow: 3px 3px 0px 0px #82b5ce;
+}
+
+.btn-listContractReq {
+	width: 150px;
+	height: 30px;
+	padding-top: 4px;
+	padding-left: 5px;
+	margin-top: 3px;
+	margin-left: 23px;
+	padding-bottom: 9px;
+	background-color: #0d92c1;
+	border: none;
+	color: #dce8dc;
+	font-size: 11pt;
+	box-shadow: 3px 3px 0px 0px black;
+}
+
+.btn-ReqParticipate {
+	width: 150px;
+	height: 30px;
+	padding-top: 4px;
+	padding-left: 5px;
+	margin-top: 3px;
+	margin-left: 23px;
+	padding-bottom: 9px;
+	background-color: #bec4ce;
+	border: none;
+	color: black;
+	font-size: 11pt;
+	box-shadow: 3px 3px 0px 0px #767a7f;
+}
+
+.btn-howto {
+	width: 150px;
+	height: 30px;
+	padding-top: 4px;
+	padding-left: 5px;
+	margin-top: 3px;
+	margin-left: 23px;
+	padding-bottom: 9px;
+	background-color: #585884;
+	border: none;
+	color: #dce8dc;
+	font-size: 11pt;
+	box-shadow: 3px 3px 0px 0px black;
+}
+
+.btn-respondReqx {
+	width: 100px;
+	height: 28px;
+	padding-top: 4px;
+	padding-left: 5px;
+	margin-top: 3px;
+	margin-left: 15px;
+	padding-bottom: 9px;
+	background-color: #bec4ce;
+	border: none;
+	color: black;
+	font-size: 9pt;
+	box-shadow: 3px 3px 0px 0px #82b5ce;
+}
+
+.btn-raiseReq {
+	width: 130px;
+	height: 28px;
+	padding-top: 4px;
+	padding-left: 5px;
+	margin-top: 3px;
+	margin-left: 23px;
+	padding-bottom: 9px;
+	background-color: #bec4ce;
+	border: none;
+	color: black;
+	font-size: 10pt;
+	box-shadow: 3px 3px 0px 0px #82b5ce;
+}
+
+div.view-doc-list {
+	height: 420px;
+	width: 105%;
+	font-size: 11pt;
+	margin-left: -10px;
+	background-color: #efe5ce;
+	color: #33507f;
+	padding-left: 10px;
+	padding-right: 10px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	font-family: "Georgia", Times, serif;
+}
+
+div.campaignDetails {
+	height: 430px;
+	width: 105%;
+	font-size: 10pt;
+	border-style: none;
+	padding-top: 10px;
+	padding-bottom: 0;
+	background-color: #0a3068;
+	color: #d5e0f2;
+	margin-left: -15px;
+	padding-left: 50px;
+	padding-right: 50px;
+	margin-top: 5px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	font-family: "Georgia", Times, serif;
+}
+
+div.dashboard-panelx {
+	height: 500px;
+	width: 105%;
+	font-size: 10pt;
+	border-style: none;
+	padding-top: 10px;
+	padding-bottom: 0;
+	background-color: #0a3068;
+	color: #d5e0f2;
+	margin-left: -10px;
+	margin-right: 0px;
+	padding-left: 35px;
+	padding-right: 20px;
+	margin-top: -10px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	font-family: "Georgia", Times, serif;
+}
+
+div.showExchangeBox {
+	background-color: #e8ecf2;
+	width: 70%;
+	color: #304e7f;
+	height: 105px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 10px 0;
+	align-items: center;
+	justify-content: space-around;
+	/* display: flex; */
+	float: none;
+	font-family: "Georgia", Times, serif;
+	font-size: 11pt;
+	box-shadow: 4px 4px 0px 0px gray;
+}
+
+div.view-dashboard-list {
+	height: 450px;
+	width: 105%;
+	font-size: 10pt;
+	margin-left: -10px;
+	background-color: #0f2c5b;
+	color: #d6e5fc;
+	padding-left: 10px;
+	padding-right: 35px;
+	overflow-x: auto;
+	overflow-y: auto;
+	font-family: "Georgia", Times, serif;
+}
+
+.fixed-height {
+	height: 500px;
+	width: 100%;
+	border-style: none;
+	padding-top: 10px;
+	padding-bottom: 0;
+}
+
+div.howtoPanel {
+	/* height: 500px; */
+	width: 100%;
+	border-style: none;
+	background-color: #5b5119;
+	color: #f2ebc6;
+	padding-top: 5px;
+	padding-bottom: 0;
+	margin-left: 50px;
+	margin-right: 40px;
+	padding-left: 25px;
+	padding-right: 25px;
+	font-family: "Georgia", Times, serif;
+	font-size: 11pt;
+	box-shadow: 3px 3px 0px 0px black;
+}
+
+div.posts-panelList {
+	height: 500px;
+	width: 109%;
+	margin-left: -28px;
+	margin-top: -10px;
+	padding-right: 90px;
+	background-color: #204c13;
+	color: white;
+	overflow-x: hidden;
+	overflow-y: auto;
+	font-size: 10pt;
+	max-height: 500px;
+}
+
+div.panel-mktContainer {
+	height: 550px;
+	width: 109%;
+	margin-left: -28px;
+	margin-top: -11px;
+	padding-top: 3px;
+	padding-right: 30px;
+	background-color: #294599;
+	color: white;
+	overflow-x: auto;
+	overflow-y: auto;
+	font-size: 10pt;
+	max-height: 550px;
+}
+
+div.how-tox {
+	background-color: #4c4523;
+	color: white;
+	font-size: 12pt;
+	font-family: "Georgia", Times, serif;
+	text-align: left;
+	margin-top: 5px;
+	margin-left: 50px;
+	margin-right: 75px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 25px;
+  padding-right: 10px;
+  overflow-x: auto;
+  overflow-y: hidden;
+	box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.7);
+}
+
+hr.dark {
+	border: none;
+	height: 2px;
+	padding-left: 50px;
+	padding-right: 50px;
+	color: black;
+	background-color: black;
+}
+
+hr.campaign-divider {
+	border: none;
+	height: 1px;
+	margin-left: 0px;
+	margin-bottom: 2px;
+	margin-top: 2px;
+	color: #3676d8;
+	background-color: #3676d8;
+}
+
+div.form-top-space {
+	height: 15px;
+}
+div.for-bottom-space {
+	height: 50px;
+}
+
+div.for-top-space {
+	height: 30px;
+}
+
+div.row-spacing {
+	height: 5px;
+}
+
+div.note-placement {
+	padding-top: 5px;
+}
+
+div.btnContributePlacement {
+	padding-top: 15px;
+	margin-top: 5px;
+}
+
+div.listNote {
+	padding-top: 10px;
+}
+
+div.loadingMsgPad {
+	padding-top: 18px;
+	color: yellow;
+	font-size: 8pt;
+}
+
+div.fixedsize-mktpost {
+	height: 550px;
+	width: 100%;
+	background-color: #274277;
+	overflow: hidden;
+	max-height: 550px;
+}
+
+div.margin-top-select {
+	padding-top: 8px;
+}
+
+div.header-margin {
+	margin-top: -10px;
+}
+
+div.balanceShowNote {
+	color: #d7ffc9;
+	font-size: 9pt;
+	padding-top: 20px;
+	margin-top: 5px;
+}
+
+div.progbar-pad {
+	margin-top: 5px;
+}
+
+.progress {
+	background-color: #c7cfdb;
+}
+
+div.operationMsg-padding {
+	padding-top: 4px;
+	margin-top: 5px;
+	text-align: left;
+}

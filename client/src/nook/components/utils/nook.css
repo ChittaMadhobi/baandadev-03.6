@@ -1,0 +1,218 @@
+.DottedBox {
+  width: 250px;
+  padding-top: 20px;
+  margin: none;
+  border: 1px black;
+}
+
+.selectWidth {
+  width: 190px;
+}
+
+.selectWidthAssess {
+  width: 230px;
+}
+
+.checkbox-font-iot {
+  font-size: 16px;
+  color: #2c7248;
+}
+
+.slider-text-paddig {
+  padding-top: 15px;
+}
+
+
+.custom_button4 {
+  background-color: #6554af;
+  width: 110px;
+  height: 35px;
+  border: none;
+  color: white;
+  padding: 1px 1px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.custom_button3 {
+  background-color: #687758;
+  width: 180px;
+  height: 35px;
+  border: none;
+  color: white;
+  padding: 1px 1px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+/* These are buttons used in FiveFactorDirect.js  */
+.custom_button-top5 {
+  background-color: #5b749b;
+  width: 100%;
+  height: 35px;
+  border: 2px solid #aeb7c4;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25em;
+  font-family: Georgia, serif;
+  margin-top: 0;
+  cursor: pointer;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  padding-top: 0;
+}
+
+.speech-button {
+  background-color: #34435b;
+  width: 130px;
+  height: 30px;
+  border: none;
+  color: white;
+  padding: 1px 1px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 1px;
+  cursor: pointer;
+}
+
+.journal-background {
+  background-color: #fff;
+  height: 380px;
+  color: #183699;
+  padding-left: 10px;
+  padding-right: 10px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* .editor-height {
+  height: 300px;
+}
+
+.text-padding {
+  padding-left: 10px;
+  padding-right: 10px;
+} */
+
+/* Tooltip custom button */
+.tooltip-top5 {
+  background-color: none;
+  margin-left: 10px;
+  margin-top: 0;
+  margin-bottom: 1px;
+  cursor: pointer;
+}
+
+/* central adjustment in top-5 comments */
+.top-text-adjust {
+  margin-bottom: 1px;
+  margin-top: -5px;
+  padding-bottom: 0;
+  padding-top: 0;
+  color: #5b749b;
+}
+
+.card-top5-slider-body {
+  background-color: #e3e8ed;
+  height: 60px;
+  padding-top: 5px;
+}
+
+.card-top5-slider-header {
+  background-color: whitesmoke;
+  height: 110px;
+  font-size: 17px;
+  font-family: Georgia, serif;
+  padding-top: 2px;
+}
+
+.self-eval-head-padding {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  margin-bottom: 0px;
+}
+
+.testq-padding {
+  padding: 0;
+  margin: 0;
+}
+
+.btn-size-same {
+  width: 85px;
+  box-shadow: 2px 3px #707b8c;
+}
+
+.btn-size-same-mirror {
+  width: 275px;
+  box-shadow: 2px 3px #707b8c;
+}
+
+.btn-size-finance-mirror {
+  width: 275px;
+  background-color: darkolivegreen;
+  box-shadow: 4px 4px #2d4f1e;
+}
+
+.line-chart-size {
+  height: 310px;
+}
+
+.btn-diarySave {
+  width: 130px;
+  height: 35px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 15px;
+  margin-left: -5px;
+  background-color: #41721d;
+  color: #fff;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.7);
+}
+
+.btn-diarySearch {
+  width: 130px;
+  height: 35px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 15px;
+  margin-left: -5px;
+  background-color: #435799;
+  color: #fff;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.7);
+}
+
+div.tasksNjournals {
+  height: 570px;
+  width: 100%;
+  background-color: #d6c186;
+  overflow: hidden;
+  max-height: 570px;
+}
+
+div.fixedsizeTasks {
+  height: 510px;
+  width: 100%;
+  background-color: rgb(245, 245, 228);
+  overflow: auto;
+  max-height: 550px;
+}
+
+div.fixedsizeJournal {
+  height: 550px;
+  width: 100%;
+  background-color: rgb(245, 245, 228);
+  overflow: auto;
+  max-height: 550px;
+}

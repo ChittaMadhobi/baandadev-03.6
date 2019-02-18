@@ -1,0 +1,271 @@
+pragma solidity ^0.4.25;
+
+// contract CampaignFactory {
+//     address[] public deployedCampaigns;
+    
+//     // This will need minimum amount for the constructor of Campaign contract. This has to be the
+//     // input for the CampaignFactory
+//     function createCampaign(uint minimum, uint _mgrBaandaId, uint _campBaandaId) public {
+//         address newCampaign = new  CampaignFunding(msg.sender, minimum, _mgrBaandaId, _campBaandaId);
+//         deployedCampaigns.push(newCampaign);
+//     }
+    
+//     function getDeployedCampaigns() public view returns (address[]){
+//         return deployedCampaigns;
+//     }
+// }
+
+contract CampaignFactory {
+    
+    struct CFCampaign {
+        string mgrName; 
+        string campaignName;
+        address createdCampaign;
+        address mgrAddress;
+    }
+    mapping (address => CFCampaign) cfcampaigns; 
+    address[] public cfcampaignAccts;
+    
+    function createCampaign(uint minimum, uint _mgrBaandaId, uint _campBaandaId, string memory _mgrName, string memory _campName) public {
+        address newCampaign = new  CampaignFunding(msg.sender, minimum, _mgrBaandaId, _campBaandaId);
+        
+        CFCampaign storage camp = cfcampaigns[newCampaign];
+        camp.mgrName = _mgrName;
+        camp.campaignName = _campName;
+        camp.createdCampaign = newCampaign;
+        camp.mgrAddress = msg.sender;
+        cfcampaignAccts.push(newCampaign) -1;
+    }
+    
+    function getCreatedCampList() public view returns (address[] memory) {
+        return cfcampaignAccts;
+    } 
+    
+    function getNoOfCampaings() view public returns (uint) {
+        return cfcampaignAccts.length;
+    }
+    function getCreatedCampDetails(address index) view public returns (string memory, string memory, address, address) {
+        return (cfcampaigns[index].mgrName, cfcampaigns[index].campaignName, cfcampaigns[index].createdCampaign, cfcampaigns[index].mgrAddress);
+    } 
+}
+
+
+contract CampaignFunding {
+    
+    // Campaign level variables: camp to denote campaign in variable naming
+    address public  campManager;        // For human readibility. 
+    uint    public  mgrBaandaId;        // Represents this instance in non-blockchain side (webapp)
+    uint    public  campBaandaId;       // BaandaId of the campaign 
+    uint    public  noOfContributors;   // Total number of Contributors
+    uint    private minAmt;             // Minimum amout in dollars
+    // Financial chests/coffers for various financial states
+    uint    public fiatCoffer;         // For holding total dollar conribution
+    uint    public cryptoCoffer;       // For holding total eth (balance gives eth at a time) 
+    uint    public availableFiatCoffer;         // For holding total dollar conribution
+    uint    public availableCryptoCoffer;       // For holding total eth (balance gives eth at a time) 
+    uint    public coffer;              // Total dollar value of the campaign
+    uint    public fiatCofferOnHold;   // Value of Fiat expense raised and hence not available
+    uint    public cryptoCofferOnHold; // Value of Crypto expense raised
+    mapping(address => bool) public approvers;  // Quick check place for approver
+    // ---
+    // Request structure for handling individual requests
+    struct Request {
+        uint    byDate;         // Outcome, approved or not, will be calculated past this
+        uint    yesCount;       // Number of approvers
+        uint    noCount;        // Number who did not approve
+        uint    yesVoteValue;   // The weighted value of the approver's vote 
+        uint    noVoteValue;    // The weighted value of the not approved votes
+        //                         // ---- Strings are replacd by uint because difficult to compare strings
+        uint    status;         //  'active=0' 'approved=1' 'denied=2' 'canceled=3' 'approval closed=4' 'complete=5'
+        uint    toBePaidIn;     //  'dollar=0' 'eth=1' 'both=2'
+        //                         //  Recipiants and names
+        uint    recipiantFiat;  //  Baanda Id that should receive the money (vendor / servce provider)
+        address recipiantCrypto;//  Recipiant receiving crypto 
+        uint    requestValueCrypto;   //  Requested Amount in Ether / weighted
+        uint    requestValueFiat; 
+        // string  description;  
+        bool    approvalActive; //  If approval is active, one can approve
+        bool    canFinalize;
+        bool    paid;           //  paid = false if for any reason recipiant is not yet paid.
+        mapping(address => bool) approvals;
+    }
+    Request[] public requests;
+    
+    // Contributor structure ==============================================
+    struct Contributor {
+        uint baandaId;          // BaandaId of the contributor
+        uint dollarAmt;         // DollarAmt contributed 
+        uint ethAmt;            // Ethereum amount contributed
+        uint coffer;
+    }                           // Address of this is the  eth contributor address
+    mapping (address => Contributor) contributors;
+    address[] public contributorAccts;
+    
+    // CONSTRUCTOR=========================================================
+    constructor(address creator,  uint _minAmt, uint _mgrBaandaId, uint _campBaandaId) public {
+        campManager = creator;          // This should be in place when generated via a factory
+        minAmt = _minAmt;               // In dollar
+        mgrBaandaId = _mgrBaandaId;     // The baandaId which holds Campaign Points
+        campBaandaId = _campBaandaId;   // This is the baandaid of the campaign account.
+    }
+
+    function contributeCrypto(uint _baandaid, uint dollarValue) public payable {    
+        Contributor storage con = contributors[msg.sender];
+        con.baandaId = _baandaid;       // Enter BaandaId of the contributor
+        con.dollarAmt = 0;              // Enter the dollar amount contributed
+        con.ethAmt = msg.value;         // Enter there amount contributed 
+        con.coffer = con.coffer + dollarValue;
+        contributorAccts.push(msg.sender) -1;
+        // Update campaign level values. 
+        cryptoCoffer = cryptoCoffer + msg.value;// Update cryptoCoffer with eth contribution
+        availableCryptoCoffer = availableCryptoCoffer + msg.value;
+        coffer = coffer + dollarValue;       // Convert eth contribution to dollar in frontend and send. 
+        noOfContributors++;                 // Update number of Contributor
+        approvers[msg.sender] = true;       // Set the contriutor to be an approver
+    }
+    
+    modifier restricted() {
+        require(msg.sender == campManager, "Not authorized to manage campaign and requests");
+        _;
+    }
+    
+    function contributeFiat(uint _baandaid, uint dollarValue) public {    
+        Contributor storage contributor = contributors[msg.sender];
+        contributor.baandaId = _baandaid;       // Enter BaandaId of the contributor
+        contributor.dollarAmt = dollarValue;              // Enter the dollar amount contributed
+        contributor.ethAmt = 0;         // Enter there amount contributed 
+        contributor.coffer = contributor.coffer + dollarValue;
+        contributorAccts.push(msg.sender) -1;
+        // Update campaign level values. 
+        fiatCoffer = fiatCoffer + dollarValue;// Update cryptoCoffer with eth contribution
+        availableFiatCoffer = availableFiatCoffer + dollarValue; // This fund is available to spend
+        coffer = coffer + dollarValue;       // Convert eth contribution to dollar in frontend and send. 
+        noOfContributors++;     // Update number of Contributor
+        approvers[msg.sender] = true;       // Set the contriutor to be an approver
+    }
+    
+
+    // --- Contributor ... will not be needed by DApp but for testing purposes
+    function getContributors() public view returns(address[]) {
+        return contributorAccts;
+    }
+    function getContributor() public view returns (uint, uint, uint) {    
+        return (contributors[msg.sender].baandaId, contributors[msg.sender].dollarAmt, contributors[msg.sender].ethAmt);
+    } 
+    function getContributorCoffer() private view returns (uint) {
+        return contributors[msg.sender].coffer;
+    } 
+    function getBalance() public view returns (uint, address) {
+        return (address(this).balance, address(this));
+    }
+    
+    // -------------------------------------------------------------------    
+    // Raise or Create Requests for expenditures - Request Related
+    function createRequest(
+        address recipientCrypto,
+        uint recipientFiat,
+        uint _byDate,
+        uint _toBePaidIn,
+        uint _valueEth,
+        uint _valueDollar
+        ) public {        
+        bool errmsg = false;   
+        if ((availableFiatCoffer - fiatCofferOnHold) <= _valueDollar 
+                || (availableCryptoCoffer - cryptoCofferOnHold ) <= _valueEth) {
+            errmsg = true;
+        }
+        require(!errmsg, "Insufficient Funds to raise this request.");
+        Request memory newRequest = Request({
+            byDate: _byDate,
+            yesCount: 0,
+            noCount: 0,
+            yesVoteValue: 0,
+            noVoteValue: 0,
+            status: 0,
+            toBePaidIn: _toBePaidIn,
+            recipiantCrypto: recipientCrypto,
+            recipiantFiat: recipientFiat,
+            requestValueCrypto: _valueEth,
+            requestValueFiat: _valueDollar,
+            approvalActive: true,
+            canFinalize: false,
+            paid: false
+        });
+        requests.push(newRequest);
+        fiatCofferOnHold = fiatCofferOnHold + _valueDollar;
+        cryptoCofferOnHold = cryptoCofferOnHold + _valueEth;
+    }
+    
+    // Approve request ... only if you are a contributor
+    function approveRequest(uint _index, uint _vote, uint _today) public {
+        Request storage req = requests[_index];
+        
+        if ( _today > req.byDate ) {
+            req.approvalActive = false;
+            req.status = 4;     // closed because date expired
+        } 
+        require(req.approvalActive, "End date expired ... approval process is closed");
+
+        require(approvers[msg.sender], "You are not an authorized approver");
+        require(!req.approvals[msg.sender], "You already voted for approval.");
+
+        // _vote = 1 means approved ... else not approved.
+        if(_vote == 1) {
+            req.yesCount++;   // Increase the approver count by 1
+            req.yesVoteValue = req.yesVoteValue + getContributorCoffer();
+        } else {
+            req.noCount++;  // Increase rejection count by 1
+            req.noVoteValue = req.noVoteValue + getContributorCoffer();
+        }
+        req.approvals[msg.sender] = true;  // Signify that you just voted 
+    }
+    
+    // Manage Request status - if cancelled, then it is finalized.
+    function manageRequestStatus(uint _index, uint _status) public restricted {
+        Request storage req = requests[_index];
+        req.status = _status;  // Change status based on front end intelligence. Mgr only clicks
+                              // except a manager can cancel at any time including post approval.
+        if (_status == 1) {
+            req.canFinalize = true;
+        }                      
+    }
+    
+    // finalize Fiat ...
+    function finalizeFiat(uint _index) public restricted returns (uint, uint) {
+        Request storage req = requests[_index];
+        require(!req.paid, "Already Paid ...Cannot pay twice.");
+        availableFiatCoffer = availableFiatCoffer - req.requestValueFiat; // Decrease available ether from campaign
+        fiatCofferOnHold = fiatCofferOnHold - req.requestValueFiat; // Reduce fiat hold value
+        req.paid = true;    // pay it.
+        req.status = 5;     // complete paid-up
+    
+        return (req.recipiantFiat, req.requestValueFiat);
+    }
+    
+    // Get the finalized recipiant baandaId and the amount to be paid.
+    function getFinalizedFiat(uint _index) view public restricted returns (uint, uint) {
+        Request storage req = requests[_index];
+        return (req.recipiantFiat, req.requestValueFiat);
+    }
+    
+    function finalizeCrypto(uint _index) public restricted {
+        Request storage req = requests[_index];
+        require(!req.paid, "Already Paid ...Cannot pay twice.");
+        availableCryptoCoffer = availableCryptoCoffer - req.requestValueCrypto; // Decrease available ether from campaign
+        cryptoCofferOnHold = cryptoCofferOnHold - req.requestValueCrypto; // Reduce crypto hold value
+        req.recipiantCrypto.transfer(req.requestValueCrypto);
+        req.paid = true;    // pay it.
+        req.status = 5;     // complete paid-up
+    }
+    // --------- get info
+    function getRequestsCount() public view returns (uint) {
+        return requests.length;
+    }
+    
+    function getCampaignSummary() public view returns (address, uint, uint, uint, uint, uint, uint, uint, uint, uint, uint, uint, uint, uint) {
+        
+        return (campManager, mgrBaandaId, campBaandaId, noOfContributors, minAmt, fiatCoffer, cryptoCoffer, 
+        availableFiatCoffer, availableCryptoCoffer, coffer, fiatCofferOnHold, cryptoCofferOnHold, address(this).balance, requests.length);
+    }
+
+}

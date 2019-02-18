@@ -1,0 +1,32 @@
+div.fixedsize-mktpost {
+  height: 550px;
+  width: 100%;
+  background-color: #274277;
+  color: lightblue;
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-height: 550px;
+  margin-top: -3px;
+}
+
+div.margin-top-select {
+  margin-top: -10px;
+}
+
+div.workarea-padding-mkt {
+  margin-top: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-top: 10px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  overflow: hidden;
+}
+
+div.top-padding-mkt {
+  height: 75px;
+}
+div.top-padding-workarea-mkt {
+  border: none;
+  padding-top: 10px;
+}

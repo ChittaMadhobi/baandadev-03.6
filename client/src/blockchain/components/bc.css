@@ -1,0 +1,39 @@
+div.fixedsize-bcpost {
+  height: 550px;
+  width: 100%;
+  background-color: #2d6005;
+  color: #f9f5cf;
+  overflow: hidden;
+  max-height: 550px;
+}
+
+div.margin-top-select {
+  margin-top: -30px;
+}
+
+
+.workarea-padding-bc {
+  margin-top: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-top: 10px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  overflow: hidden;
+}
+
+.workarea-padding-history {
+  margin-top: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  overflow: hidden;
+}
+
+div.top-space {
+  height: 30px;
+}

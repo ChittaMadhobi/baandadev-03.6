@@ -1,0 +1,41 @@
+div.fixedsize-clpost {
+  height: 550px;
+  width: 100%;
+  background-color: #724a04;
+  color: #f9f5cf;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  max-height: 550px;
+}
+
+div.margin-top-select {
+  margin-top: -30px;
+}
+
+
+.workarea-padding-cl {
+  margin-top: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-top: 10px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  /* overflow-y: auto;
+  overflow-x: auto; */
+}
+
+.workarea-padding-history {
+  margin-top: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  overflow: hidden;
+}
+
+div.top-space {
+  height: 30px;
+}

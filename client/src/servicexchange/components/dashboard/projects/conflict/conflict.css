@@ -1,0 +1,122 @@
+.fixed-height {
+  height: 500px;
+  width: 100%;
+  border-style: none;
+  padding-top: 10px;
+  padding-bottom: 0;
+}
+
+div.space-at-top {
+  height: 40px;
+}
+
+div.space-between-buttons {
+  height: 10px;
+}
+
+div.space-outside-buttons {
+  height: 100px;
+}
+
+.the-box-background {
+  background-color: #282c34;
+  padding-left: 1px;
+  margin-left: none;
+}
+
+.chart-panel {
+  height: 500px;
+  width: 105%;
+  font-size: 12pt;
+  margin-left: -18px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  font-family: "Georgia", Times, serif;
+}
+
+div.message-suggest {
+  text-align: center;
+  padding-left: 20px;
+}
+
+div.form-panel-conflict {
+  height: 500px;
+  width: 105%;
+  font-size: 12pt;
+  margin-left: -10px;
+  color: #cce6ff;
+  padding-left: 4px;
+  padding-right: 4px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-family: "Georgia", Times, serif;
+  background-color: #282c34;
+}
+
+div.progbar-pad {
+  margin-top: 5px;
+}
+
+div.text-align-left-sm {
+  text-align: left;
+}
+
+div.text-align-left-full {
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 35px;
+}
+
+.chart-panel-feedback {
+  height: 430px;
+  width: 100%;
+  font-size: 14pt;
+  padding-left: 20px;
+  margin-left: -10px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  font-family: "Georgia", Times, serif;
+}
+
+div.form-panel-create-team {
+  height: 500px;
+  width: 105%;
+  font-size: 12pt;
+  margin-left: -10px;
+  color: #cce6ff;
+  padding-left: 4px;
+  padding-right: 4px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-family: "Georgia", Times, serif;
+  background-color: #282c34;
+}
+
+div.how-to-read-intel {
+  background-color: #4c4523;
+  color: white;
+  font-size: 12pt;
+  font-family: "Georgia", Times, serif;
+  text-align: left;
+  margin-left: 20px;
+  margin-right: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 25px;
+  padding-right: 10px;
+  box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.7);
+}
+
+div.view-log{
+  height: 400px;
+  width: 105%;
+  font-size: 12pt;
+  margin-left: -10px;
+  background-color: #efe5ce;
+  color: #33507f;
+  padding-left: 15px;
+  padding-right: 5px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-family: "Georgia", Times, serif; 
+}

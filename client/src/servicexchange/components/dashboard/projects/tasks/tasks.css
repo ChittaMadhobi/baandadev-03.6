@@ -1,0 +1,351 @@
+.fixed-height {
+  height: 500px;
+  width: 100%;
+  border-style: none;
+  padding-top: 10px;
+  padding-bottom: 0;
+}
+
+div.space-at-top {
+  height: 40px;
+}
+
+div.space-between-buttons {
+  height: 10px;
+}
+
+div.space-outside-buttons {
+  height: 50px;
+}
+
+.btn-save-new-task {
+  width: 200px;
+  height: 35px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #4a7c9b;
+  color: white;
+  box-shadow: 2px 2px 2px 1px rgba(160, 164, 170, 0.6);
+}
+
+
+.control-btn-taskLog {
+  width: 100px;
+  height: 35px;
+  padding-top: 5px;
+  padding-left: 5px;
+  margin-left: 23px;
+  padding-bottom: 5px;
+  background-color: #53889e;
+  color: white;
+  font-size: 12pt;
+  box-shadow: 2px 2px 2px 1px #c0d1d8;
+}
+
+.control-btn-scheduling {
+  width: 150px;
+  height: 35px;
+  padding-top: 5px;
+  padding-left: 5px;
+  margin-left: 23px;
+  padding-bottom: 5px;
+  background-color: #588e3b;
+  color: white;
+  font-size: 12pt;
+  box-shadow: 2px 2px 2px 1px #c0d1d8;
+}
+
+.ctrl-panel-x {
+  background-color: gray;
+  margin-top: 2px;
+  margin-left: -10px;
+  height: 500px;
+}
+
+.header-shadow {
+  text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.9);
+}
+
+.the-box-background {
+  background-color: #282c34;
+  padding-left: 1px;
+  margin-left: none;
+}
+
+div.left-align {
+  text-align: left;
+}
+
+.default-msg {
+  height: 500px;
+  width: 100%;
+  border-style: none;
+  padding-top: 100px;
+  padding-left: 75px;
+  padding-right: 75px;
+  color: #cce6ff;
+  font-size: 14pt;
+  font-family: "Georgia", Times, serif;
+}
+
+.chart-panel {
+  height: 500px;
+  width: 105%;
+  font-size: 12pt;
+  margin-left: -18px;
+  overflow-y: hidden;
+  overflow-x: auto;
+  font-family: "Georgia", Times, serif;
+}
+
+div.form-panel-role-mgmt {
+  height: 500px;
+  width: 100%;
+  font-size: 12pt;
+  margin-left: -10px;
+  color: #cce6ff;
+  padding-left: 4px;
+  padding-right: 4px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  font-family: "Georgia", Times, serif;
+  background-color: #282c34;
+}
+
+div.form-panel-create-task {
+  height: 500px;
+  width: 104%;
+  font-size: 12pt;
+  margin-left: -10px;
+  color: #cce6ff;
+  padding-left: 10px;
+  padding-right: 20px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-family: "Georgia", Times, serif;
+  background-color: #282c34;
+}
+
+/* div.form-panel {
+  height: 500px;
+  width: 100%;
+  font-size: 12pt;
+  margin-left: -10px;
+  color: #cce6ff;
+  padding-left: 4px;
+  padding-right: 4px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-family: "Georgia", Times, serif;
+  background-color: #282c34;
+} */
+
+div.space-between-rows {
+  height: 5px;
+}
+
+.control-btn-team-save {
+  width: 200px;
+  height: 35px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #4c5e77;
+  color: white;
+  box-shadow: 3px 3px 2px 1px rgba(128, 140, 160, 0.9);
+}
+
+div.show-included-roles {
+  height: 100px;
+  width: 100%;
+  font-size: 10pt;
+  /* margin-left: -18px; */
+  /* overflow-y: ; */
+  background-color: #e8d7bb;
+  color: #192c44;
+  overflow: auto;
+  font-family: "Georgia", Times, serif;
+  text-align: left;
+}
+
+div.how-to-create-team {
+  background-color: #4c4523;
+  color: white;
+  font-size: 12pt;
+  font-family: "Georgia", Times, serif;
+  text-align: left;
+  margin-left: 20px;
+  margin-right: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 25px;
+  padding-right: 10px;
+  box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.7);
+}
+
+/* ============ Tree View ===============*/
+.panel {
+  padding-top: 1px;
+  margin-top: 0px;
+  margin-left: 100px;
+  padding-top: 50px;
+  padding-left: 50px;
+  height: 500px;
+  width: 1000px;
+  background-color: #e8dece;
+}
+
+div.form-panel-tree-view {
+  height: 500px;
+  width: 110%;
+  font-size: 12pt;
+  margin-left: -18px;
+  margin-top: 4px;
+  color: #cce6ff;
+  padding-left: 4px;
+  padding-right: 4px;
+  overflow: hidden;
+  font-family: "Georgia", Times, serif;
+  background-color: #55575b;
+}
+
+div.form-panel {
+  height: 500px;
+  width: 100%;
+  font-size: 12pt;
+  margin-left: -10px;
+
+  color: black;
+  padding-left: 4px;
+  padding-right: 4px;
+  /* overflow-y: auto;
+  overflow-x: auto; */
+  overflow: hidden;
+  font-family: "Georgia", Times, serif;
+  /* background-color: #e0ceaa; */
+}
+
+div.form-panel-edit-task {
+  height: 500px;
+  width: 105%;
+  font-size: 12pt;
+  margin-left: -10px;
+
+  color: white;
+  padding-left: 10px;
+  padding-right: 25px;
+  /* overflow-y: auto;
+  overflow-x: auto; */
+  overflow: auto;
+  font-family: "Georgia", Times, serif;
+  /* background-color: #e0ceaa; */
+}
+div.edit-log-lines {
+  text-align: left;
+  color: #254d8c;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+
+div.form-panel-task-log {
+  height: 500px;
+  width: 100%;
+  font-size: 12pt;
+  margin-left: -10px;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  overflow: hidden;
+  font-family: "Georgia", Times, serif;
+  /* background-color: #e0ceaa; */
+}
+
+div.view-log{
+  height: 400px;
+  width: 105%;
+  font-size: 12pt;
+  margin-left: -10px;
+  background-color: #efe5ce;
+  color: #33507f;
+  padding-left: 10px;
+  padding-right: 10px;
+  overflow: auto;
+  font-family: "Georgia", Times, serif; 
+}
+
+div.view-schdeule{
+  height: 400px;
+  width: 105%;
+  font-size: 12pt;
+  margin-left: -10px;
+  background-color: #efe5ce;
+  color: black;
+  padding-left: 30px;
+  padding-right: 30px;
+  overflow: auto;
+  font-family: "Georgia", Times, serif; 
+}
+
+.upper-margin {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.main-start {
+   height: 100px;
+}
+
+div.show-box {
+  height: 37px;
+  width: 100%;
+  font-size: 8pt;
+  margin-top: -30px;
+  margin-left: -10px;
+  padding-top: 2px;
+  color: #2b2305;
+  background-color: #e5dcbc;
+  border: 1px solid #705f20;
+  box-shadow: 3px 3px #888888;
+  z-index: 100;
+}
+
+div.button-position {
+  margin-left: -20px;
+}
+
+div.header {
+  font-size: 9pt;
+  color: #e2cc7a;
+  font-family: "Georgia", Times, serif;
+}
+
+/* ================= Member Team Allocation ===================== */
+
+table.disp {
+  table-layout: fixed;
+  width: 100%;    
+  background-color: white;
+}   
+
+thead th {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  text-align: center;
+}
+tr td {
+  text-align: center;
+}
+div.member-team-allocation {
+  height: 500px;
+  width: 105%;
+  font-size: 12pt;
+  margin-left: -18px;
+  margin-top: 4px;
+  color:#3c5172;
+  padding-left: 20px;
+  padding-right: 4px;
+  overflow: auto;
+  font-family: "Georgia", Times, serif;
+  background-color: rgb(7, 23, 114);
+}

@@ -1,0 +1,90 @@
+.DottedBox {
+  width: 250px;
+  padding-top: 20px;
+  margin: none;
+  border: 1px black;
+}
+
+.selectWidth {
+  width: 190px;
+}
+
+.slider-text-paddig {
+  padding-top: 15px;
+}
+
+.context-box-personality {
+  height: 100%;
+  width: 100%;
+  background-color: #f2d48a;
+  border-color: #000;
+  -moz-border-radius: 15px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  box-shadow: 5px 5px #888888;
+}
+
+.context-box-workstyle {
+  height: 100%;
+  width: 100%;
+  background-color: #bfe2f2;
+  border-color: #000;
+  -moz-border-radius: 15px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  box-shadow: 5px 5px #888888;
+}
+
+.text-area-size {
+  margin-top: -20px;
+  margin-bottom: -10px;
+}
+
+.card-top5-slider-header {
+  background-color: whitesmoke;
+  height: 145px;
+  width: 97%;
+  font-size: 17px;
+  font-family: Georgia, serif;
+  padding-top: 2px;
+  font-size: 10pt;
+  margin-left: 10px;
+}
+
+.card-trust-slider-header {
+  background-color: whitesmoke;
+  height: 100%;
+  width: 97%;
+  font-size: 17px;
+  font-family: Georgia, serif;
+  padding-top: 5px;
+  font-size: 10pt;
+  margin-left: 10px;
+}
+
+.card-trust-slider-body {
+  background-color: #e0d2a8;
+  height: 50px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Georgia, serif;
+  padding-top: 2px;
+  font-size: 10pt;
+  margin-left: 0;
+}
+
+.space-between-sliders {
+  height: 10px;
+}
+
+.card-message-body {
+  background-color: #274791;
+  height: 100px;
+  width: 450px;
+  font-size: 17px;
+  font-family: Georgia, serif;
+  padding-top: 30px;
+  font-size: 10pt;
+  color: #fff;
+  margin: auto;
+}

@@ -1,0 +1,88 @@
+.fixed-height {
+    height: 500px;
+    width: 100%;
+    border-style: none;
+    padding-top: 10px;
+    padding-bottom: 0;
+  }
+  
+  div.space-at-top {
+    height: 20px;
+  }
+  
+  div.space-on-top {
+    height: 20px;
+  }
+
+  div.space-on-top-project {
+    height: 20px;
+  }
+
+  div.space-between-buttons {
+    height: 5px;
+  }
+
+  div.space-between-buttons-project {
+    height: 2px;
+  }
+  
+  .space-outside-buttons {
+    height: 50px;
+  }
+
+  
+  .control-btn-preview {
+    width: 140px;
+    height: 35px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #4c5e77;
+    color: white;
+    box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.6);
+  }
+  
+  
+  .ctrl-panel-x {
+    background-color: gray;
+    margin-top: 2px;
+    margin-left: -10px;
+    height: 500px;
+  }
+  
+  .header-shadow {
+    text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.9);
+  }
+  
+  .the-box-background {
+    background-color: #282c34;
+    padding-left: 1px;
+    margin-left: none;
+  }
+  
+  div.left-align {
+    text-align: left;
+  }
+
+  .default-msg {
+    height: 500px;
+    width: 100%;
+    border-style: none;
+    padding-top: 100px;
+    padding-left: 75px;
+    padding-right: 75px;
+    color: #cce6ff;
+    font-size: 14pt;
+    font-family: "Georgia", Times, serif;
+  }
+
+  .chart-panel {
+    height: 500px;
+    width: 105%;
+    font-size: 12pt;
+    margin-left: -18px;
+    
+    overflow-y: hidden;
+    overflow-x: auto;
+    font-family: "Georgia", Times, serif;
+  }
+  

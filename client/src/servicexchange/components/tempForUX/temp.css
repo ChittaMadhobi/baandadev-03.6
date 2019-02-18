@@ -1,0 +1,92 @@
+div.fixedsize-video {
+  margin-top: 0px;
+  height: 505px;
+  width: 100%;
+  background-color: black;
+  overflow: none;
+  max-height: 505px;
+}
+
+.sound-height {
+  margin-top: 70px;
+  margin-left: -8px;
+  height: 80px;
+  width: 100%;
+  background: #2f3238;
+}
+
+.the-box-background {
+  background-color: #282c34;
+  padding-left: 1px;
+  margin-left: none;
+  height: 504px;
+}
+
+.buffer-height {
+  height: 220px;
+}
+
+.sound-box-ctrl {
+  height: 50px;
+  width: 240px;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 1px;
+}
+
+div.dccsfixedsize {
+  height: 500px;
+  width: 100%;
+  background-color: black;
+  color: lightblue;
+  overflow: hidden;
+  margin-left: 3px;
+  margin-top: 2px;
+}
+
+div.dccschartsfixedsize {
+  height: 500px;
+  width: 100%;
+  background-color: #fff;
+  color: black;
+  overflow: hidden;
+  margin-left: 3px;
+  margin-top: 2px;
+}
+
+div.fixedsize-text {
+  height: 500px;
+  width: 100%;
+  background-color: rgb(245, 245, 228);
+  overflow: auto;
+  max-height: 550px;
+}
+
+.workarea-padding-text {
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-right: 10px;
+  padding-top: 5px;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+}
+
+.spacing-sender-profile {
+  height: 25px;
+}
+
+.sender-fonts {
+  font-family: Georgia, serif;
+  font-size: 12pt;
+  color: #494ca3;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+.text-align-right {
+  text-align: right;
+}

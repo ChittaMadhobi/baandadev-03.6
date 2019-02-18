@@ -1,0 +1,242 @@
+.fixed-height {
+  height: 500px;
+  width: 100%;
+  border-style: none;
+  padding-top: 10px;
+  padding-bottom: 0;
+}
+
+div.space-at-top {
+  height: 40px;
+}
+
+div.space-between-buttons {
+  height: 10px;
+}
+
+div.space-outside-buttons {
+  height: 100px;
+}
+
+.the-box-background {
+  background-color: #282c34;
+  padding-left: 1px;
+  margin-left: none;
+}
+
+.chart-panel {
+  height: 500px;
+  width: 105%;
+  font-size: 12pt;
+  margin-left: -18px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  font-family: "Georgia", Times, serif;
+}
+
+div.message-suggest {
+  text-align: center;
+  padding-left: 20px;
+}
+
+div.form-panel-conflict {
+  height: 500px;
+  width: 105%;
+  font-size: 12pt;
+  margin-left: -10px;
+  color: #cce6ff;
+  padding-left: 4px;
+  padding-right: 4px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-family: "Georgia", Times, serif;
+  background-color: #282c34;
+}
+
+div.progbar-pad {
+  margin-top: 5px;
+}
+
+div.text-align-left-sm {
+  text-align: left;
+}
+
+div.text-align-left-full {
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 35px;
+}
+
+.chart-panel-feedback {
+  height: 430px;
+  width: 100%;
+  font-size: 14pt;
+  padding-left: 20px;
+  margin-left: -10px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  font-family: "Georgia", Times, serif;
+}
+
+/* div.form-panel-create-team {
+  height: 500px;
+  width: 105%;
+  font-size: 12pt;
+  margin-left: -10px;
+  color: #cce6ff;
+  padding-left: 4px;
+  padding-right: 4px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-family: "Georgia", Times, serif;
+  background-color: #282c34;
+} */
+
+div.form-panel-publish {
+  height: 500px;
+  width: 105%;
+  font-size: 12pt;
+  margin-left: -5px;
+  color: #cce6ff;
+  padding-left: 8px;
+  padding-right: 4px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-family: "Georgia", Times, serif;
+  background-color: #282c34;
+}
+
+/* div.how-to-read-intel {
+  background-color: #4c4523;
+  color: white;
+  font-size: 12pt;
+  font-family: "Georgia", Times, serif;
+  text-align: left;
+  margin-left: 20px;
+  margin-right: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 25px;
+  padding-right: 10px;
+  box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.7);
+} */
+
+div.view-log{
+  height: 400px;
+  width: 105%;
+  font-size: 12pt;
+  margin-left: -10px;
+  background-color: #efe5ce;
+  color: #33507f;
+  padding-left: 15px;
+  padding-right: 5px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-family: "Georgia", Times, serif; 
+}
+
+div.text-left-pad {
+  padding-left: 5px;
+}
+
+div.text-right-select {
+  padding-right: 35px;
+  margin-left: -5px;
+  font-size: 10pt;
+}
+
+div.text-left-select {
+  /* margin-left: -20px; */
+  font-size: 10pt;
+}
+
+.control-btn-consume {
+  width: 120px;
+  height: 35px;
+  padding-top: 5px;
+  padding-left: 5px;
+  margin-left: 23px;
+  padding-bottom: 5px;
+  background-color: #53889e;
+  color: white;
+  font-size: 12pt;
+  box-shadow: 2px 2px 2px 1px #c0d1d8;
+}
+
+.doc-btn {
+  width: 100px;
+  height: 25px;
+  padding-top: 5px;
+  padding-left: 5px;
+  margin-right: 30px;
+  margin-left: 10px;
+  padding-bottom: 5px;
+  background-color: #1c407a;
+  color: white;
+  font-size: 9pt;
+  box-shadow: 2px 2px 2px 1px #666f7c;
+}
+
+.btn-target-consume {
+  width: 120px;
+  height: 35px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #257a27;
+  color: white;
+  box-shadow: 2px 2px 2px 1px rgba(160, 164, 170, 0.6);
+}
+
+.btn-locate {
+  width: 120px;
+  height: 35px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #2c63a5;
+  color: white;
+  box-shadow: 2px 2px 2px 1px rgba(160, 164, 170, 0.6);
+}
+
+div.view-doc-list {
+  height: 420px;
+  width: 105%;
+  font-size: 12pt;
+  margin-left: -10px;
+  background-color: #efe5ce;
+  color: #33507f;
+  padding-left: 10px;
+  padding-right: 10px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: "Georgia", Times, serif; 
+}
+
+div.display-list-lines {
+  text-align: left;
+  color: #254d8c;
+  padding-left: 5px;
+  padding-right: 25px;
+}
+
+.slider-padding {
+  padding-right: 40px;
+}
+
+div.pub-intel-padding {
+  margin-left: -10px;
+  padding-right: 50px;
+  margin-top: -5px;
+}
+
+div.pub-intel-pad {
+  text-align: left;
+  padding-right: 40px;
+}
+
+div.show-review {
+  text-align: left;
+  margin-left: -10px;
+  padding-left: 15px;
+  padding-right: 50px;
+  margin-top: -5px;
+}

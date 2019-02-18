@@ -1,0 +1,89 @@
+.DottedBox {
+  width: 250px;
+  padding-top: 20px;
+  margin: none;
+  border: 1px black;
+}
+
+.selectWidth {
+  width: 190px;
+}
+
+.slider-text-paddig {
+  padding-top: 15px;
+}
+
+.masktalk-text {
+  font-size: 1.5em;
+  font-family: Georgia, sans-serif;
+}
+
+.masktalk-text-note {
+  font-size: 1em;
+  font-family: Georgia, sans-serif;
+  color: #506484;
+}
+
+.thead-blue {
+  background-color: #506484;
+  color: white;
+}
+
+.bg-blue {
+  background-color: #506484;
+  color: white;
+}
+
+.btn-size-rows {
+  width: 85px;
+  box-shadow: 2px 3px #707b8c;
+  background-color: #37455b;
+}
+
+.top-space {
+  padding-top: 10px;
+}
+
+.table-width {
+  width: 100%;
+}
+
+.number-align-earn {
+  text-align: right;
+  color: green;
+}
+
+.number-align-pay {
+  text-align: right;
+  color: red;
+}
+
+.budget-plan-save {
+  width: 125px;
+  background-color: #5d8391;
+  border-color: black;
+  border-style: solid;
+  box-shadow: 3px 3px;
+  color: lightcyan;
+  border-width: 1px;
+}
+
+.budget-load-edit {
+  width: 125px;
+  background-color: #b27857;
+  border-color: black;
+  border-style: solid;
+  box-shadow: 3px 3px;
+  color: lightcyan;
+  border-width: 1px;
+}
+
+.budgeting-table {
+  width: 545px;
+}
+
+.table-cell-head {
+  margin-top: 1px;
+  padding-top: 1px;
+  margin-bottom: 1px;
+}

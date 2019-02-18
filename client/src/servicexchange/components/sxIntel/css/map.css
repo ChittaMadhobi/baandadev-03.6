@@ -1,0 +1,141 @@
+.map_container {
+  height: '500px';
+  width: '100%';
+}
+
+.border-adjust {
+  padding: 1px;
+  margin: 1px;
+  color: red;
+}
+
+.card-width {
+  width: 15rem;
+}
+
+.map_sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.invisible {
+  opacity: 0;
+}
+
+.box-to-display {
+  width: 175px;
+  height: 75px;
+  background-color: bisque;
+  border: 2px solid;
+  border-color: brown;
+  box-shadow: 7px 7px;
+}
+
+.intel_font {
+  font-size: 14px;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: oblique;
+  color: #354b66;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  padding-left: 0;
+  padding-right: 2px;
+  margin-right: 2px;
+}
+
+.stadium1 {
+  flex-basis: calc(100% - 20px);
+  margin: 10px;
+  cursor: pointer;
+}
+
+.stadium {
+  width: 250px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.stadium:hover {
+  opacity: 0.8;
+}
+.stadium-picture {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+.stadium-title {
+}
+
+.card_decoration {
+  background-color: black;
+  color: white;
+}
+
+.lead_card_decoration {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #cec9b5;
+  border: 2px solid;
+  border-color: black;
+  color: black;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+  padding-left: 10px;
+  padding-right: 0px;
+  margin-right: 0px;
+  z-index: 10;
+}
+
+.lead_card_adjustment {
+  position: -webkit-sticky;
+  position: sticky;
+  width: 17rem;
+  top: 0;
+  padding-left: 1px;
+  padding-bottom: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #cec9b5;
+  z-index: 10;
+}
+
+div.fixedsize-intel-map {
+  height: 550px;
+  width: 100%;
+  background-color: #fff;
+  overflow: hidden;
+  max-height: 600px;
+  box-shadow: 5px 5px #888888;
+  border-style: solid;
+  border-color: 1px #c1ccc9;
+  padding-bottom: 25px;
+}
+
+div.fixedsize-intel-selected {
+  height: 550px;
+  width: 17rem;
+  background-color: rgb(245, 245, 228);
+  overflow: auto;
+  max-height: 550px;
+}
+
+.space-below-intel-map-col {
+  height: 100ps;
+  padding-bottom: 50px;
+}
