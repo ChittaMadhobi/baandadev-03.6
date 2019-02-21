@@ -9,7 +9,8 @@
   "main": "server.js",
   "scripts": {
     "client-install": "npm install --prefix client",
-    "start": "cross-var node --max-old-space-size=4096 server.js",
+    "start": "node server.js",
+    "build": "react-scripts --max_old_space_size=4096 build", 
     "server": "nodemon server.js",
     "client": "npm start -prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
