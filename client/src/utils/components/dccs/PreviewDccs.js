@@ -11,6 +11,8 @@ import HPeerSentiment from './charts/HPeerSentiment';
 
 import SummaryWorkDCCS from './charts/SummaryWorkDCCS';
 
+import './dccs.css';
+
 class PreviewDCCS extends Component {
   constructor(props) {
     super(props);
@@ -312,7 +314,8 @@ class PreviewDCCS extends Component {
         </div>
         <div className="row">
           <div className="col">
-            <div className="chart-size">{chartout}</div>
+            <div className="chart-sizeY">{chartout}</div>
+            {/* {chartout} */}
           </div>
         </div>
       </div>

@@ -72,7 +72,7 @@ const INITIAL_DATA = [
     workType: 'hourly-work', // project, hourly-work, employment
     datePosted: '2018/10/29', // string for now
     contactType: false, // new or interest ... true=post interest exchange
-    messageType: 'vedio' // audio, video, text
+    messageType: 'video' // audio, video, text
   },
   {
     id: 3,

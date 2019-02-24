@@ -1,6 +1,7 @@
 const nodemailer = require('nodemailer');
+const keys = require('../config/keys');
 
-const confirmMail1 = (req, rand) => {
+const confirmMail = (req, rand) => {
   console.log('reached confirmMail');
   let toEmail = req.body.email;
   let link =
@@ -12,7 +13,7 @@ const confirmMail1 = (req, rand) => {
     '&email=' +
     toEmail;
   let htmlLink =
-    'Hello, <br> Please Click the link to verify your email for Baanda Registration with 10 days of receiving it<br>' +
+    'Hello, <b>Welcome to Banda</b>. <br> Please Click the link to verify your email for Baanda Registration with 10 days of receiving it<br>' +
     '<a href="' +
     link +
     '"> Click to verify </a>';
@@ -24,24 +25,23 @@ const confirmMail1 = (req, rand) => {
 
   // NOTE: auth user and pass should eventually come from config variables.
   var transporter = nodemailer.createTransport({
-    service: 'Office365',
     host: 'smtp.office365.com',
-    secureConnection: false,
-    port: 465,
+    port: 587,
+    secure: false,
     auth: {
-      user: 'jit@baanda.com',
-      pass: 'Riddhi10#'
+      user: keys.emailID,
+      pass: keys.emailPassKey
     }
   });
 
   var mailOptions = {
-    from: 'jit@baanda.com',
+    from: keys.emailID,
     to: toEmail,
-    subject: 'Sending Email using Node.js',
+    subject: 'Baanda Email Verification & Welcome',
     //text: 'That was easy -- Trying once  again!'
     html: htmlLink
   };
-
+  
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
       console.log('Error sendmail : ' + error);
@@ -52,6 +52,7 @@ const confirmMail1 = (req, rand) => {
   });
 
   return outcome;
+
 };
 
-module.exports = confirmMail1;
+module.exports = confirmMail;

@@ -87,3 +87,16 @@
   padding-top: 1px;
   margin-bottom: 1px;
 }
+
+.btn-saveInDb {
+  width: 150px;
+  height: 30px;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  padding-right: 10px;
+  margin-left: -5px;
+  background-color: #7a879b;
+  color: white;
+  box-shadow: 2px 2px 2px 1px rgba(6, 15, 30, 0.6);
+}

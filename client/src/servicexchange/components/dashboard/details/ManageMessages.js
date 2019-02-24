@@ -87,8 +87,8 @@ class ManageMessages extends Component {
       };
     } else {
       // console.log('this id:' + id);
-      console.log('props length:' + this.props.sxMessages.length);
-      console.log('this.props.sxMessages:' + JSON.stringify(this.props.sxMessages));
+      // console.log('props length:' + this.props.sxMessages.length);
+      // console.log('this.props.sxMessages:' + JSON.stringify(this.props.sxMessages));
       //idx=this.props.sxMessages.length;
       msgObj = {
         id: id, // the one passed in as input parameter

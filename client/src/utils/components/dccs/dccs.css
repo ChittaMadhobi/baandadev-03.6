@@ -199,4 +199,17 @@ div.dccs-graph-fixedsize {
 .chart-size {
   height: 400px;
   width: 100%;
+  overflow: hidden;
+}
+
+.chart-sizeX {
+  height: 400px;
+  width: 100%;
+  overflow: hidden;
+}
+
+div.chart-sizeY {
+  height: 400px;
+  width: 100%;
+  overflow: hidden;
 }

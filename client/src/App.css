@@ -102,6 +102,11 @@ div.footerspace {
   border: none;
 }
 
+div.about-bottom-buffer {
+  height: 85px;
+  border: none;
+}
+
 .thumbnail {
   width: 100%;
   padding: 0.5em;

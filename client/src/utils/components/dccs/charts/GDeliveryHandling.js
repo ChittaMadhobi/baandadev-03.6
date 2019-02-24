@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import fusioncharts from 'fusioncharts';
 import charts from 'fusioncharts/fusioncharts.charts';
 import ReactFusioncharts from 'react-fusioncharts';
-
+import '../dccs.css';
 // Resolves charts dependancy
 charts(fusioncharts);
 

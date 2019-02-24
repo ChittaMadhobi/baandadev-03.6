@@ -30,8 +30,8 @@ class NookAboutSocialCircle extends Component {
     let aboutAns4 = null;
     let aboutAns5 = null;
     let aboutAns6 = null;
-    let aboutAns7 = null;
-    let aboutAns8 = null;
+    // let aboutAns7 = null;
+    // let aboutAns8 = null;
     if (btnClickNo === '1') {
       aboutAns1 = (
         <div>
@@ -61,7 +61,7 @@ class NookAboutSocialCircle extends Component {
               that.
 
             </p>
-          <div className="textspaceTop" />
+          <div className="about-bottom-buffer" />
         </div>
       );
     }
@@ -76,7 +76,7 @@ class NookAboutSocialCircle extends Component {
           scores in various dimensions of your personality. Those scores are call DCCS - dynamic
           co-op chemistry scores. You can choose which scores, when and who you want to
           present them to. 
-          <div className="textspaceTop" />
+          <div className="about-bottom-buffer" />
         </div>
       );
     }
@@ -88,7 +88,7 @@ class NookAboutSocialCircle extends Component {
           will do it honestly. We suggest that you select a diverse group of people who have 
           different kinds of interactions with you. You don't want to choose only your best friends
           and buddies, you really need to mix it up so that you get more useful scores. 
-          <div className="textspaceTop" />
+          <div className="about-bottom-buffer" />
         </div>
       );
     }
@@ -98,7 +98,7 @@ class NookAboutSocialCircle extends Component {
           <font color="blue">Ans 4: </font> It will show you the scores from your social circle
           averaged in the form of graphs and meters. DCCS is multidimensional so there will be many more
           scores and gauges than what you see now.
-          <div className="textspaceTop" />
+          <div className="about-bottom-buffer" />
         </div>
       );
     }
@@ -128,34 +128,34 @@ class NookAboutSocialCircle extends Component {
           <p>
             Assess (Reflection - Mirror Mirror) - 
           </p>
-          <div className="textspaceTop" />
+          <div className="about-bottom-buffer" />
         </div>
       );
     }
     if (btnClickNo === '6') {
       aboutAns6 = (
         <div>
-          <font color="blue">Ans 6: </font> This is the answer 6
-          <div className="textspaceTop" />
+          <font color="blue">Ans 6: </font> This is an arbitrary limit for considering close-circle at a point of time to get right reflection. This is opposite to what social-media did where people advertised themselves. It is for interosepction and for me to understand who you are as a continuously morphing personality and life-contexts. The weighted-average of contextual feedback on time-series (adjusting moment-by-moment) becomes marginal with more people while computational cost-time increases. In future, this (15 in close social circle) may change based on utilization feedback and me learning about human beings (you).
+          <div className="about-bottom-buffer" />
         </div>
       );
     }
-    if (btnClickNo === '7') {
-      aboutAns7 = (
-        <div>
-          <font color="blue">Ans 7: </font> This is the answer 7
-          <div className="textspaceTop" />
-        </div>
-      );
-    }
-    if (btnClickNo === '8') {
-      aboutAns8 = (
-        <div>
-          <font color="blue">Ans 8: </font> This is the answer 8
-          <div className="textspaceTop" />
-        </div>
-      );
-    }
+    // if (btnClickNo === '7') {
+    //   aboutAns7 = (
+    //     <div>
+    //       <font color="blue">Ans 7: </font> This is the answer 7
+    //       <div className="about-bottom-buffer" />
+    //     </div>
+    //   );
+    // }
+    // if (btnClickNo === '8') {
+    //   aboutAns8 = (
+    //     <div>
+    //       <font color="blue">Ans 8: </font> This is the answer 8
+    //       <div className="about-bottom-buffer" />
+    //     </div>
+    //   );
+    // }
 
     return (
       <div>
@@ -210,7 +210,7 @@ class NookAboutSocialCircle extends Component {
               6. Why is the Social Circle limited to 15 people?
             </button>
             {aboutAns6}
-            <button
+            {/* <button
               id="7"
               className="btn btn-outline-info btn-sm btn-block text-left"
               onClick={this.handlePostClick}
@@ -225,7 +225,7 @@ class NookAboutSocialCircle extends Component {
             >
               8. More Tasks and social circle questions ...?
             </button>
-            {aboutAns8}
+            {aboutAns8} */}
           </div>
         </div>
       </div>

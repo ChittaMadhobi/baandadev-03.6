@@ -425,6 +425,9 @@ class BasicProfileEntry extends Component {
             </button>
           </div>
         </form>
+        <div className="textspaceTop" />
+        <div className="textspaceTop" />
+        <div className="textspaceTop" />
       </div>
     );
   }

@@ -41,7 +41,6 @@ class CreateSocialCircle extends Component {
 
     this.onChange = this.onChange.bind(this);
     this.handleTextInvite = this.handleTextInvite.bind(this);
-    this.onChangePhone = this.onChangePhone.bind(this);
     this.handleSaveClick = this.handleSaveClick.bind(this);
   }
 
@@ -61,16 +60,12 @@ class CreateSocialCircle extends Component {
     });
   };
 
+
   onChangePhone = value => {
-    // console.log('phone:' + value);
-    // this.setState({
-    //   mobileNumber: value
-    // });
+    console.log('phone:' + value);
   };
 
   handleTextInvite() {
-    //let xx = document.getElementById('inlineCheckbox1').value;
-    //console.log('Value of textbox1 selected:' + xx);
     this.setState({
       textInvite: !this.state.textInvite
     });
@@ -96,12 +91,12 @@ class CreateSocialCircle extends Component {
           </div>
           <div className="col-md-6">
             <ReactPhoneInput
-              name="mobileNumber"
-              className="form-control form-control-sm"
-              value={this.state.mobileNumber}
-              defaultCountry={'us'}
-              onChange={this.onChangePhone(this.state.mobileNumber)}
-            />
+                name="mobileNumber"
+                className="form-control form-control-sm"
+                value={this.state.mobileNumber}
+                defaultCountry={'us'}
+                onChange={this.onChangePhone(this.state.mobileNumber)}
+              />
             <p className="text-muted">
               <small>Mobile number (default USA) - mandatory.</small>
             </p>
@@ -223,7 +218,7 @@ class CreateSocialCircle extends Component {
             <div className="row">
               <div className="col-md-6">
                 <TextFieldGroup
-                  name="youCallBy"
+                  name="hailNote"
                   placeholder="Dear ..."
                   value={this.state.hailNote}
                   onChange={this.onChange}
@@ -234,7 +229,7 @@ class CreateSocialCircle extends Component {
               </div>
               <div className="col-md-6">
                 <TextFieldGroup
-                  name="youCallBy"
+                  name="emailAddr"
                   placeholder="Email"
                   value={this.state.emailAddr}
                   onChange={this.onChange}
@@ -297,6 +292,9 @@ class CreateSocialCircle extends Component {
                 <i className="fa fa-check" />
               </button>
             </div>
+            <div className="footerspace" />
+            <div className="textspaceTop" />
+            <div className="textspaceTop" />
           </form>
         </div>
       </div>

@@ -48,13 +48,13 @@ class WhoRUinSX extends Component {
     );
   }
 
-  handlewsHumblefulOnChange = value => {
+  handlewsHumbleOnChange = value => {
     this.setState({
       humble: value
     });
   };
 
-  handlewsConnectorfulOnChange = value => {
+  handlewsConnectorOnChange = value => {
     this.setState({
       connector: value
     });
@@ -71,7 +71,7 @@ class WhoRUinSX extends Component {
   };
   handlewsCompassionateOnChange = value => {
     this.setState({
-      icompassionate: value
+      compassionate: value
     });
   };
   handlewsIntigrityOnChange = value => {
@@ -599,7 +599,7 @@ class WhoRUinSX extends Component {
               orientation="horizontal"
               max={10}
               handleLabel={'--Pts'}
-              onChange={this.handleResourcefulOnChange}
+              onChange={this.handlewsResourcefulOnChange}
             />
           </div>
         </div>
@@ -626,7 +626,7 @@ class WhoRUinSX extends Component {
               orientation="horizontal"
               max={10}
               handleLabel={'--Pts'}
-              onChange={this.handleConnectorOnChange}
+              onChange={this.handlewsConnectorOnChange}
             />
           </div>
         </div>
@@ -653,7 +653,7 @@ class WhoRUinSX extends Component {
               orientation="horizontal"
               max={10}
               handleLabel={'--Pts'}
-              onChange={this.handleHumbleOnChange}
+              onChange={this.handlewsHumbleOnChange}
             />
           </div>
         </div>

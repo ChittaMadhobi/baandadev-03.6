@@ -47,7 +47,7 @@ class NookAboutHumanoid extends Component {
           be able to pick up on subtle clues such as micro muscle movement in the face, heartbeat increase,
           flutter in the voice, etc.
           
-          <div className="textspaceTop" />
+          <div className="about-bottom-buffers" />
         </div>
       );
     }
@@ -67,7 +67,7 @@ class NookAboutHumanoid extends Component {
           Baanda itself feels something, but because that is what it is programmed to do.
           
           
-          <div className="textspaceTop" />
+          <div className="about-bottom-buffers" />
         </div>
       );
     }
@@ -80,7 +80,7 @@ class NookAboutHumanoid extends Component {
           causal inference – the causal analysis of multivariate data using the general theory of 
           causation described by Judea Pearl which provides a coherent mathematical 
           framework for our AI. 
-          <div className="textspaceTop" />
+          <div className="about-bottom-buffers" />
         </div>
       );
     }
@@ -89,7 +89,7 @@ class NookAboutHumanoid extends Component {
         <div>
           <font color="blue">Ans 4: </font> Artificial intelligence cannot replace human to human 
           interaction. 
-          <div className="textspaceTop" />
+          <div className="about-bottom-buffers" />
         </div>
       );
     }
@@ -99,7 +99,7 @@ class NookAboutHumanoid extends Component {
           <font color="blue">Ans 5: </font> Machine learning is based in statistics. Baanda will not
           treat individuals as statistics. Our brand of AI is based on causal inference and is a much 
           more nuanced and contextual approach.
-          <div className="textspaceTop" />
+          <div className="about-bottom-buffers" />
         </div>
       );
     }
@@ -111,7 +111,7 @@ class NookAboutHumanoid extends Component {
           various situations. Those are the simplest devices, but there are so many possible
           biometric sensors that Baanda could use to glean information about an individual's 
           emotional state. 
-          <div className="textspaceTop" />
+          <div className="about-bottom-buffers" />
         </div>
       );
     }
@@ -119,7 +119,7 @@ class NookAboutHumanoid extends Component {
       aboutAns7 = (
         <div>
           <font color="blue">Ans 7: </font> This is the answer 7
-          <div className="textspaceTop" />
+          <div className="about-bottom-buffers" />
         </div>
       );
     }
@@ -127,7 +127,7 @@ class NookAboutHumanoid extends Component {
       aboutAns8 = (
         <div>
           <font color="blue">Ans 8: </font> This is the answer 8
-          <div className="textspaceTop" />
+          <div className="about-bottom-buffers" />
         </div>
       );
     }
@@ -135,7 +135,7 @@ class NookAboutHumanoid extends Component {
       aboutAns9 = (
         <div>
           <font color="blue">Ans 9: </font> This is the answer 9
-          <div className="textspaceTop" />
+          <div className="about-bottom-buffers" />
         </div>
       );
     }
@@ -143,7 +143,7 @@ class NookAboutHumanoid extends Component {
       aboutAns10 = (
         <div>
           <font color="blue">Ans 10: </font> This is the answer 10
-          <div className="textspaceTop" />
+          <div className="about-bottom-buffers" />
         </div>
       );
     }

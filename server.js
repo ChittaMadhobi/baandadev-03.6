@@ -17,7 +17,7 @@ require('./models/common/User');
 // Load Routes
 const users = require('./routes/api/users');
 const finance = require('./routes/api/finance');
-const marketing = require('./routes/api/marketing');
+// const marketing = require('./routes/api/marketing');
 // For Google - to be activated
 const auth = require('./routes/auth');
 
@@ -53,7 +53,7 @@ require('./config/passport')(passport);
 
 app.use('/api/users', users);
 app.use('/api/finance', finance);
-app.use('/api/marketing', marketing);
+// app.use('/api/marketing', marketing);
 // app.use('/api/profile', profile);
 // app.use('/api/posts', posts);
 //=============== Server STATIC ASSETS if in production ========

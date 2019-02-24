@@ -8,6 +8,7 @@ class NookAboutBudgeting extends Component {
       answer1: '',
       answer2: '',
       answer3: '',
+      answer4: '',
       btnClickNo: ''
     };
 
@@ -28,10 +29,10 @@ class NookAboutBudgeting extends Component {
     let aboutAns2 = null;
     let aboutAns3 = null;
     let aboutAns4 = null;
-    let aboutAns5 = null;
-    let aboutAns6 = null;
-    let aboutAns7 = null;
-    let aboutAns8 = null;
+    // let aboutAns5 = null;
+    // let aboutAns6 = null;
+    // let aboutAns7 = null;
+    // let aboutAns8 = null;
     if (btnClickNo === '1') {
       aboutAns1 = (
         <div>
@@ -40,7 +41,7 @@ class NookAboutBudgeting extends Component {
           your money and what you save for. If you save up for a vacation or something for a 
           long time, that not only says something about how much you want that thing or that 
           vacation, but it tells about your level of patience and determination.
-          <div className="textspaceTop" />
+          <div className="about-bottom-buffers" />
         </div>
       );
     }
@@ -56,7 +57,7 @@ class NookAboutBudgeting extends Component {
           For example, in the not-too-distant future, Baanda will be able to stop you from
           going on a shopping spree that you can't afford and redirect you to something
           less expensive and more fulfilling like a project or a new friend.
-          <div className="textspaceTop" />
+          <div className="about-bottom-buffers" />
         </div>
       );
     }
@@ -79,7 +80,7 @@ class NookAboutBudgeting extends Component {
             sub categories. Click the x symbol to delete a line. Baanda will quickly add up your
             expenses and income and give you a comparison.
           </p>
-          <div className="textspaceTop" />
+          <div className="about-bottom-buffers" />
         </div>
       );
     }
@@ -90,42 +91,42 @@ class NookAboutBudgeting extends Component {
           credit cards, bank statements, etc. We want Baanda to do as much of the work
           as possible, but in the interim, you have to do it yourself. See the answer to
           number 2 for more about why use Baanda.
-          <div className="textspaceTop" />
+          <div className="about-bottom-buffers" />
         </div>
       );
     }
-    if (btnClickNo === '5') {
-      aboutAns5 = (
-        <div>
-          <font color="blue">Ans 5: </font> This is the answer 5
-          <div className="textspaceTop" />
-        </div>
-      );
-    }
-    if (btnClickNo === '6') {
-      aboutAns6 = (
-        <div>
-          <font color="blue">Ans 6: </font> This is the answer 6
-          <div className="textspaceTop" />
-        </div>
-      );
-    }
-    if (btnClickNo === '7') {
-      aboutAns7 = (
-        <div>
-          <font color="blue">Ans 7: </font> This is the answer 7
-          <div className="textspaceTop" />
-        </div>
-      );
-    }
-    if (btnClickNo === '8') {
-      aboutAns8 = (
-        <div>
-          <font color="blue">Ans 8: </font> This is the answer 8
-          <div className="textspaceTop" />
-        </div>
-      );
-    }
+    // if (btnClickNo === '5') {
+    //   aboutAns5 = (
+    //     <div>
+    //       <font color="blue">Ans 5: </font> This is the answer 5
+    //       <div className="about-bottom-buffers" />
+    //     </div>
+    //   );
+    // }
+    // if (btnClickNo === '6') {
+    //   aboutAns6 = (
+    //     <div>
+    //       <font color="blue">Ans 6: </font> This is the answer 6
+    //       <div className="about-bottom-buffers" />
+    //     </div>
+    //   );
+    // }
+    // if (btnClickNo === '7') {
+    //   aboutAns7 = (
+    //     <div>
+    //       <font color="blue">Ans 7: </font> This is the answer 7
+    //       <div className="about-bottom-buffers" />
+    //     </div>
+    //   );
+    // }
+    // if (btnClickNo === '8') {
+    //   aboutAns8 = (
+    //     <div>
+    //       <font color="blue">Ans 8: </font> This is the answer 8
+    //       <div className="about-bottom-buffers" />
+    //     </div>
+    //   );
+    // }
 
     return (
       <div>
@@ -164,7 +165,7 @@ class NookAboutBudgeting extends Component {
               me a break down. Why do it again?
             </button>
             {aboutAns4}
-            <button
+            {/* <button
               id="5"
               className="btn btn-outline-info btn-sm btn-block text-left"
               onClick={this.handlePostClick}
@@ -195,7 +196,7 @@ class NookAboutBudgeting extends Component {
             >
               8. More Tasks and budgeting questions ...?
             </button>
-            {aboutAns8}
+            {aboutAns8} */}
           </div>
         </div>
       </div>

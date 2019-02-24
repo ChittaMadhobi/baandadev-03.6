@@ -10,7 +10,7 @@ class TempAudioMsg extends Component {
       granted: false,
       rejectedReason: '',
       showsoundgif: true,
-      srcURL: 'https://s3-us-west-2.amazonaws.com/baandadev1/audio1.webm'
+      srcURL: 'https://s3-us-west-2.amazonaws.com/baandadev1/audio-message-for-sxmessage.webm'
     };
 
     this.handleAudioEnded = this.handleAudioEnded.bind(this);

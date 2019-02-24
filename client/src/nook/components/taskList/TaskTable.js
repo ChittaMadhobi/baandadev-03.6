@@ -129,6 +129,7 @@ class TaskTable extends Component {
             </div>
           </div>
         )}{' '}
+        <div className="footerspace" />
       </div>
     );
   }

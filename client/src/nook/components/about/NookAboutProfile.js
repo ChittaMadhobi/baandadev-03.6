@@ -58,7 +58,7 @@ class NookAboutProfile extends Component {
 
 
           
-          <div className="textspaceTop" />
+          <div className="about-bottom-buffer" />
         </div>
       );
     }
@@ -68,7 +68,7 @@ class NookAboutProfile extends Component {
         <div>
           <font color="blue">Ans 2: </font> The system is designed to assist you. The more
           it knows about you, the more it will be able to do it's job.
-          <div className="textspaceTop" />
+          <div className="about-bottom-buffer" />
         </div>
       );
     }
@@ -82,7 +82,7 @@ class NookAboutProfile extends Component {
           your answers because Baanda will not make snap judgements about you based on 
           them. It is more of a starting point and as time goes on, Baanda will know you
           based on other methods such as causal inference.
-          <div className="textspaceTop" />
+          <div className="about-bottom-buffer" />
         </div>
       );
     }
@@ -90,7 +90,7 @@ class NookAboutProfile extends Component {
       aboutAns4 = (
         <div>
           <font color="blue">Ans 4: </font> Absolutely. Change is expected.
-          <div className="textspaceTop" />
+          <div className="about-bottom-buffer" />
         </div>
       );
     }
@@ -98,7 +98,7 @@ class NookAboutProfile extends Component {
       aboutAns5 = (
         <div>
           <font color="blue">Ans 5: </font> Most likely. 
-          <div className="textspaceTop" />
+          <div className="about-bottom-buffer" />
         </div>
       );
     }
@@ -110,7 +110,7 @@ class NookAboutProfile extends Component {
           conversations. In addition to speech recognition, natural language understanding
           and machine learning, these virtual assistants will be able to detect your
           emotions, your mood and your persona. 
-          <div className="textspaceTop" />
+          <div className="about-bottom-buffer" />
         </div>
       );
     }
@@ -125,7 +125,7 @@ class NookAboutProfile extends Component {
           believe that everyone has talent and sometimes we don't even realize that the
           thing that we're good at naturally can have a greater purpose. Baanda's goal is
           to bring those talents to light.
-          <div className="textspaceTop" />
+          <div className="about-bottom-buffer" />
         </div>
       );
     }
@@ -134,7 +134,7 @@ class NookAboutProfile extends Component {
         <div>
           <font color="blue">Ans 8: </font> Absolutely. Baanda understands that human beings 
           are changeable creatures.
-          <div className="textspaceTop" />
+          <div className="about-bottom-buffer" />
         </div>
       );
     }

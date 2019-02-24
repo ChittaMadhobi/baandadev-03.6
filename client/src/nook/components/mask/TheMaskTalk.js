@@ -34,7 +34,8 @@ class TheMaskTalk extends Component {
   };
 
   openHoloModal = param => e => {
-    console.log('param : ' + param);
+    alert('The holoraphic emulation of Baanda humanoid conversation is ongoing including our device-based R&D. In coming releases, we will emulate how the it may see. The actual interaction is depndent on one of the main pillars of Baanda - The Mask that will need marriage of Causal Inference & IoT based sensors, and increasingly holographic.')
+    // console.log('param : ' + param);
     //let msg = 'This could be Jit ID: ' + param;
     // this.props.showModal(
     //   {

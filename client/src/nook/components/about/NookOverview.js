@@ -44,7 +44,7 @@ class NookOverview extends Component {
           tools to use for budgeting, a to-do list and a journal. It is also
           the space that houses your profile, your messaging, your social 
           circle and bi-directional reputation scoring.
-          <div className="textspaceTop" />
+          <div className="about-bottom-buffer" />
         </div>
       );
     }
@@ -62,7 +62,7 @@ class NookOverview extends Component {
           drawing out untapped potential and connecting like-minded people 
           to one another. Baanda not only helps indviduals deepen their self-worth,
           but also, helps us to create community and connection.
-          <div className="textspaceTop" />
+          <div className="about-bottom-buffer" />
         </div>
       );
     }
@@ -76,7 +76,7 @@ class NookOverview extends Component {
           as you choose to be connected to it. In the Nook profile, Baanda will ask you 
           questions from time to time about all aspects of your life. The
           process will be on-going and dynamic.
-          <div className="textspaceTop" />
+          <div className="about-bottom-buffer" />
         </div>
       );
     }
@@ -94,7 +94,7 @@ class NookOverview extends Component {
           realize your true talents, by connecting you with other people who you may not
           have otherwise known and by teaching us all that the path to happiness and well 
           being is as much one of collaborating and giving to others than of receiving.
-          <div className="textspaceTop" />
+          <div className="about-bottom-buffer" />
         </div>
       );
     }
@@ -107,7 +107,7 @@ class NookOverview extends Component {
           your interests, how you spend you time, whether or not you procrastinate, etc. The 
           Baanda journal can also be a creative space. There is no wrong way to use it at this 
           time.
-          <div className="textspaceTop" />
+          <div className="about-bottom-buffer" />
         </div>
       );
     }
@@ -118,7 +118,7 @@ class NookOverview extends Component {
           using Service Xchange to budget their income and expenses so that they can choose 
           to work non-traditional schedules and help them develop scenarios for how to 
           accomplish that. 
-          <div className="textspaceTop" />
+          <div className="about-bottom-buffer" />
         </div>
       );
     }
@@ -132,7 +132,7 @@ class NookOverview extends Component {
           spiritually. Life in general is dynamic, as are relationships, ideas, thoughts, etc.
           Over time, everything changes. If it doesn't change, Baanda will know that something
           is wrong.
-          <div className="textspaceTop" />
+          <div className="about-bottom-buffer" />
         </div>
       );
     }
@@ -144,7 +144,7 @@ class NookOverview extends Component {
           and it is not our revenue model which is available for anyone to see. We are 
           currently researching and considering various models including hiring a third 
           party to conduct audits to ensure that Baanda data is secure.
-          <div className="textspaceTop" />
+          <div className="about-bottom-buffer" />
         </div>
       );
     }
@@ -154,7 +154,7 @@ class NookOverview extends Component {
           <font color="blue">Ans 9: </font> Your data will be encrypted. Even if someone
           is able to get access to it, they won't be able to decipher it without your access
           key.
-          <div className="textspaceTop" />
+          <div className="about-bottom-buffer" />
         </div>
       );
     }
@@ -168,7 +168,7 @@ class NookOverview extends Component {
           tone of voice, etc. When Baanda gets it wrong, it will learn just like a person would.
           That is Baanda intelligence. Information about you is your data like where you live, 
           your birthday, etc.
-          <div className="textspaceTop" />
+          <div className="about-bottom-buffer" />
         </div>
       );
     }

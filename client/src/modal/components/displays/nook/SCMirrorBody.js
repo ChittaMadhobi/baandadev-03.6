@@ -281,6 +281,9 @@ class SCMirrorBody extends Component {
             </div>
           </div>
           <div className="textspaceTop" />
+          <div className="float-left">
+           <font color="brown"><b>Interactive - click on spheres for who-is-who of your life.</b></font>
+           </div>
           <div className="float-right">
             <button
               className="btn btn-primary btn-sm shadow"

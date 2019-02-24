@@ -3,6 +3,8 @@ import fusioncharts from 'fusioncharts';
 import charts from 'fusioncharts/fusioncharts.charts';
 import ReactFusioncharts from 'react-fusioncharts';
 
+import '../dccs.css';
+
 charts(fusioncharts);
 const dataSource = {
   chart: {
@@ -67,7 +69,7 @@ class SummaryWorkDCCS extends Component {
       <div className="container">
         <div className="row">
           <div className="col">
-            <div className="chart-size">
+            <div className="chart-sizeX">
               <ReactFusioncharts
                 type="radar"
                 width="100%"

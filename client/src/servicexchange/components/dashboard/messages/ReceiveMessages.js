@@ -27,7 +27,8 @@ class ReceiveMessages extends Component {
     //console.log('type:' + type);
 
     let output = '';
-    if (type === 'vedio') {
+    if (type === 'video') {
+      console.log('In ReceiveMessages ... type === video')
       output = (
         <div>
           <TempVideoMsg />

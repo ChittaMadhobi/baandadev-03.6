@@ -39,7 +39,7 @@ class TempDCCSReqMsg extends Component {
           {' '}
           <h5>DCCS Dimensions Requested</h5>
           <font color="white">
-            [Switch to Send, DCCS, to review, check, and approve]
+            [To Review, Check, and Approve DCCS Sharing, go to 'Switch to Send' >> DCCS]
           </font>
         </div>
         <div className="row">

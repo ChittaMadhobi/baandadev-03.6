@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import fusioncharts from 'fusioncharts';
 import charts from 'fusioncharts/fusioncharts.charts';
 import ReactFusioncharts from 'react-fusioncharts';
-
+import '../dccs.css';
 // Resolves charts dependancy
 charts(fusioncharts);
 
@@ -43,7 +43,7 @@ class EMgmtStyle extends Component {
       <div className="container">
         <div className="row">
           <div className="col">
-            <div className="chart-size">
+            <div className="chart-sizeX">
               <ReactFusioncharts
                 type="doughnut3d"
                 width="100%"

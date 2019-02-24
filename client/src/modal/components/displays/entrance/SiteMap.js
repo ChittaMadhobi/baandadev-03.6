@@ -7,9 +7,6 @@ import "../../../css/localModal.css";
 import "./css/entrance.css";
 
 import SiteMapPng from "./img/Site-map.png";
-// import StartHereGuide from './img/startHereGuide.png';
-// import StartHereNook from './img/startHereNook.png';
-// import HolographicUX from './img/holograpgicUX.png';
 
 class SiteMap extends Component {
   constructor(props) {
@@ -25,7 +22,7 @@ class SiteMap extends Component {
 
   closeModal(e) {
     e.preventDefault();
-    console.log("closeModal.func : " + this.state.todotext);
+    // console.log("closeModal.func : " + this.state.todotext);
     const modTask = {
       todotext: this.state.todotext
     };
@@ -42,9 +39,9 @@ class SiteMap extends Component {
     //const { title, message, todotext } = this.props;
     const { user } = this.props.auth;
     // console.log("user:" + JSON.stringify(user));
-    const { title, message } = this.props;
+    // const { title, message } = this.props;
 
-    console.log("title :" + title + " | message:" + message);
+    // console.log("title :" + title + " | message:" + message);
     return (
       <div className="container">
         <div className="modal-content-z">
@@ -54,7 +51,7 @@ class SiteMap extends Component {
                 Welcome{" "}
                 {/* <font color="blue">{this.props.auth.user.name} ...</font> */}
                 <font color="blue">{user.name} ...</font>
-                &nbsp;Service Offerings
+                &nbsp;Service Offerings of the Baanda Bazar
               </h5>
             </div>
           </div>

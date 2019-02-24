@@ -8,6 +8,7 @@ import DatePicker from "react-datepicker";
 import moment from "moment";
 
 import "react-datepicker/dist/react-datepicker.css";
+import '../../css/profile.css';
 
 class AddTasks extends Component {
   constructor(props) {
@@ -26,6 +27,7 @@ class AddTasks extends Component {
     this.onSubmit = this.onSubmit.bind(this);
     this.handlePriorityChange = this.handlePriorityChange.bind(this);
     this.handleChange = this.handleChange.bind(this);
+    this.handleSaveInDB = this.handleSaveInDB.bind(this);
     //this.onChangeTodoText = this.onChangeTodoText.bind(this);
   }
 
@@ -34,6 +36,10 @@ class AddTasks extends Component {
   //     todotext: e.target.value
   //   });
   // }
+
+  handleSaveInDB = () => {
+    alert('On click, all your task-work or updates you have done today would be saved in database.');
+  }
 
   handleChange(date) {
     this.setState({
@@ -146,16 +152,12 @@ class AddTasks extends Component {
                 <button
                   type="button"
                   onClick={() =>
-                    this.setState({
-                      todotext: "",
-                      tasknotes: "",
-                      priority: "medium"
-                    })
+                    this.handleSaveInDB()
                   }
                   style={{ marginTop: "25px", marginRight: "15px" }}
-                  className="btn btn-danger btn-sm btn-size-same"
+                  className="btn-saveInDb"
                 >
-                  Cancel
+                  Save Changes
                 </button>
               </div>
               <div className="float-right ">

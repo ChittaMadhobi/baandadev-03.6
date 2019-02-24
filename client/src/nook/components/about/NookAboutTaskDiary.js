@@ -8,6 +8,7 @@ class NookAboutTaskDiary extends Component {
       answer1: '',
       answer2: '',
       answer3: '',
+      answer4: '',
       btnClickNo: ''
     };
 
@@ -28,10 +29,10 @@ class NookAboutTaskDiary extends Component {
     let aboutAns2 = null;
     let aboutAns3 = null;
     let aboutAns4 = null;
-    let aboutAns5 = null;
-    let aboutAns6 = null;
-    let aboutAns7 = null;
-    let aboutAns8 = null;
+    // let aboutAns5 = null;
+    // let aboutAns6 = null;
+    // let aboutAns7 = null;
+    // let aboutAns8 = null;
     if (btnClickNo === '1') {
       aboutAns1 = (
         <div>
@@ -41,7 +42,7 @@ class NookAboutTaskDiary extends Component {
           modules and Baanda AI uses them to learn about you. Particularly in the 
           diary, if you are constantly writing about something, Baanda will know that
           it is an important issue in your life at this time.
-          <div className="textspaceTop" />
+          <div className="about-bottom-buffer" />
         </div>
       );
     }
@@ -58,7 +59,7 @@ class NookAboutTaskDiary extends Component {
           accomplish your tasks and goals more efficiently. The system will eventually 
           be able to find opportunities or connections for you based on your interests,
           needs, goals, etc.
-          <div className="textspaceTop" />
+          <div className="about-bottom-buffer" />
         </div>
       );
     }
@@ -71,7 +72,7 @@ class NookAboutTaskDiary extends Component {
           -art. Users will have the ability to choose where to save their data, data will be
           encrypted and we will have 3rd party audits to ensure that Baanda is in compliance
           with our security promise.
-          <div className="textspaceTop" />
+          <div className="about-bottom-buffer" />
         </div>
       );
     }
@@ -82,42 +83,42 @@ class NookAboutTaskDiary extends Component {
           will lead to something like a humanoid relationship. For each individual,
           Baanda will have a unique relationship. The tasks and diary sections are the
           first stab at that relationship.
-          <div className="textspaceTop" />
+          <div className="about-bottom-buffer" />
         </div>
       );
     }
-    if (btnClickNo === '5') {
-      aboutAns5 = (
-        <div>
-          <font color="blue">Ans 5: </font> This is the answer 5
-          <div className="textspaceTop" />
-        </div>
-      );
-    }
-    if (btnClickNo === '6') {
-      aboutAns6 = (
-        <div>
-          <font color="blue">Ans 6: </font> This is the answer 6
-          <div className="textspaceTop" />
-        </div>
-      );
-    }
-    if (btnClickNo === '7') {
-      aboutAns7 = (
-        <div>
-          <font color="blue">Ans 7: </font> This is the answer 7
-          <div className="textspaceTop" />
-        </div>
-      );
-    }
-    if (btnClickNo === '8') {
-      aboutAns8 = (
-        <div>
-          <font color="blue">Ans 8: </font> This is the answer 8
-          <div className="textspaceTop" />
-        </div>
-      );
-    }
+    // if (btnClickNo === '5') {
+    //   aboutAns5 = (
+    //     <div>
+    //       <font color="blue">Ans 5: </font> This is the answer 5
+    //       <div className="about-bottom-buffer" />
+    //     </div>
+    //   );
+    // }
+    // if (btnClickNo === '6') {
+    //   aboutAns6 = (
+    //     <div>
+    //       <font color="blue">Ans 6: </font> This is the answer 6
+    //       <div className="about-bottom-buffer" />
+    //     </div>
+    //   );
+    // }
+    // if (btnClickNo === '7') {
+    //   aboutAns7 = (
+    //     <div>
+    //       <font color="blue">Ans 7: </font> This is the answer 7
+    //       <div className="about-bottom-buffer" />
+    //     </div>
+    //   );
+    // }
+    // if (btnClickNo === '8') {
+    //   aboutAns8 = (
+    //     <div>
+    //       <font color="blue">Ans 8: </font> This is the answer 8
+    //       <div className="about-bottom-buffer" />
+    //     </div>
+    //   );
+    // }
 
     return (
       <div>
@@ -156,7 +157,7 @@ class NookAboutTaskDiary extends Component {
               4. What is the evolution path of this Tasks and Diary section?
             </button>
             {aboutAns4}
-            <button
+            {/* <button
               id="5"
               className="btn btn-outline-info btn-sm btn-block text-left"
               onClick={this.handlePostClick}
@@ -187,7 +188,7 @@ class NookAboutTaskDiary extends Component {
             >
               8. More Tasks and diary questions ...?
             </button>
-            {aboutAns8}
+            {aboutAns8} */}
           </div>
         </div>
       </div>

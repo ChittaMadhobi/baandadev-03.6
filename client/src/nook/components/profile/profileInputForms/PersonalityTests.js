@@ -1183,7 +1183,7 @@ class PersonalityTests extends Component {
         <div className="row">
           <div className="col-md-6 col-sxm-12">
             <div className="testq-padding">
-              35. I am very spontaneous - I act without thinking. &nbsp;>>Pt:
+              35. I am not very spontaneous - I think, analyze and decide. &nbsp;>>Pt:
               &nbsp;
               <b>{this.state.q35}</b>
             </div>

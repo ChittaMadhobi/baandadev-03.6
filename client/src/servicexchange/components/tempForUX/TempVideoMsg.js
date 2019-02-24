@@ -4,11 +4,12 @@ import './temp.css';
 
 class TempVideoMsg extends Component {
   render() {
+    // console.log('inside TempVideoMsg ...');
     return (
       <div className="fixedsize-video">
         <div className="text-center">
           <ReactPlayer
-            url="https://s3-us-west-2.amazonaws.com/baandadev1/videoMsg4.webm"
+            url="https://s3-us-west-2.amazonaws.com/baandadev1/trj66-bwmdy-crowdfund.webm"
             className="react-player"
             playing={true}
             controls={true}

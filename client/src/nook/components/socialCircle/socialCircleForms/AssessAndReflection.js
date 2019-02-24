@@ -80,7 +80,7 @@ class AssessAndReflection extends Component {
             someone who has invited you. The person who invited you will be in
             the dropdown. Select a name from the dropdown to assess. To see your
             reflection from the Social Circle you have created, select 
-            'Mirror Mirror'.
+            'Mirror Mirror'. <font color="blue"><b>The dimensions of assessment is same as your self-assessment but focused towards the person you are assessing.</b></font>
           </h4>
         </div>
       );
