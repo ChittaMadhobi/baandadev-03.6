@@ -14,7 +14,7 @@ class AboutRouter extends Component {
     let output;
     if (selectValue === 'none') {
       output = (
-        <div>
+        <div className="about-ans-panelbc">
           <DefaultMessage />
         </div>
       );
@@ -23,24 +23,36 @@ class AboutRouter extends Component {
     if (selectValue === 'overviewQuestions') {
       output = (
         <div className="about-ans-panelbc">
-          <BCOverview />
+          <div className="row">
+            <div className="col-1">&nbsp;</div>
+            <div className="col-10"><BCOverview /></div>
+            <div className="col-1">&nbsp;</div>
+          </div>
         </div>
       );
     }
 
     if (selectValue === 'postQuestions') {
       output = (
-        <div>
-          <BCPost />
+        <div className="about-ans-panelbc">
+          <div className="row">
+            <div className="col-1">&nbsp;</div>
+            <div className="col-10"><BCPost /></div>
+            <div className="col-1">&nbsp;</div>
+          </div>
         </div>
       );
     }
 
     if (selectValue === 'browseQuestion') {
       output = (
-        <div>
-          <BCBrowse />
+        <div className="about-ans-panelbc">
+        <div className="row">
+          <div className="col-1">&nbsp;</div>
+          <div className="col-10"><BCBrowse /></div>
+          <div className="col-1">&nbsp;</div>
         </div>
+      </div>
       );
     }
 

@@ -23,33 +23,53 @@ class AboutRouter extends Component {
 
     if (selectValue === 'overviewQuestions') {
       output = (
+
         <div className="about-ans-panel">
-          <MktOverview />
+          <div className="row">
+            <div className="col-1">&nbsp;</div>
+            <div className="col-10"><MktOverview /></div>
+            <div className="col-1">&nbsp;</div>
+          </div>
         </div>
       );
     }
 
     if (selectValue === 'postQuestions') {
       output = (
-        <div>
-          <MktPost />
+        <div className="about-ans-panel">
+        <div className="row">
+          <div className="col-1">&nbsp;</div>
+          <div className="col-10"><MktPost /></div>
+          <div className="col-1">&nbsp;</div>
         </div>
+      </div>
+        
       );
     }
 
     if (selectValue === 'dashboardQuestion') {
       output = (
-        <div>
-          <MktDashboard />
+      <div className="about-ans-panel">
+        <div className="row">
+          <div className="col-1">&nbsp;</div>
+          <div className="col-10"><MktDashboard /></div>
+          <div className="col-1">&nbsp;</div>
         </div>
+      </div>
+        
       );
     }
 
     if (selectValue === 'browseQuestion') {
       output = (
-        <div>
-          <MktBrowse />
+        <div className="about-ans-panel">
+        <div className="row">
+          <div className="col-1">&nbsp;</div>
+          <div className="col-10"><MktBrowse /></div>
+          <div className="col-1">&nbsp;</div>
         </div>
+      </div>
+        
       );
     }
 

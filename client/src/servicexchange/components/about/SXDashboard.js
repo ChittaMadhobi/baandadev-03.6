@@ -34,9 +34,9 @@ class SXDashboard extends Component {
     if (btnClickNo === '1') {
       aboutAns1 = (
         <div>
-          <font color="blue">Ans 1: </font> The SX Pursuits section lists whatever you are pursuing in the job
+          <p align="justify"> The SX Pursuits section lists whatever you are pursuing in the job
           world - whatever you already posted up. You don't have to look in several places to find all your
-          postings. They are all in one place.
+          postings. They are all in one place.</p>
           <div className="textspaceTop" />
         </div>
       );
@@ -45,7 +45,7 @@ class SXDashboard extends Component {
     if (btnClickNo === '2') {
       aboutAns2 = (
         <div>
-          <font color="blue">Ans 2: </font> The SX Message Center is the place to connect to prospective &
+          <p align="justify"> The SX Message Center is the place to connect to prospective &
           current employers, co-workers, mentors, apprentices, co-op members, team members, etc. Click on
           a magnifying glass to the right of a name to open the message modal. Click on 'Sender' to see  
           the senders's post so that you know how or why you got connected. If you click on 'Text',
@@ -55,7 +55,7 @@ class SXDashboard extends Component {
           of message sending is sharing your DCCS - Dynamic Co-operative Chemistry Score. You get to choose which 
           parts of your DCCS that you want to share. DCCS is growing and changing as you use the system more
           and more. If you look at DCCS Send Controls, and click on 'Review', you will see samples of the kind 
-          of charts, graphs and information that the system can share with others at this time. 
+          of charts, graphs and information that the system can share with others at this time. </p>
           <div className="textspaceTop" />
         </div>
       );
@@ -64,7 +64,7 @@ class SXDashboard extends Component {
     if (btnClickNo === '3') {
       aboutAns3 = (
         <div>
-          <font color="blue">Ans 3: </font> Only Help-Requesters, Co-op Leads and Mentors can initiate 
+          <p align="justify">Only Help-Requesters, Co-op Leads and Mentors can initiate 
           agreements. Multiple people can be tagged in the agreement as approvers who have some stake or
           involvement in the agreement. Agreements are written documents that are saved in the blockchain. 
           Agreements can be about anything, but in the Service Xchange, we are focusing on work agreements
@@ -72,7 +72,7 @@ class SXDashboard extends Component {
           time factors, the payment, etc. We suggest making your contracts as detailed as possible. When
           Baanda goes live, we will provide more guidelines about how to write a good contract to protect
           everyone involved to get the best outcome and to prevent conflict. Baanda will also allow you to 
-          amend and update your agreements by going through the same approval process.
+          amend and update your agreements by going through the same approval process.</p>
           <div className="textspaceTop" />
         </div>
       );
@@ -80,11 +80,11 @@ class SXDashboard extends Component {
     if (btnClickNo === '4') {
       aboutAns4 = (
         <div>
-          <font color="blue">Ans 4: </font> In addition to helping you find a job or find workers to do a job
+          <p align="justify"> In addition to helping you find a job or find workers to do a job
           and making solid agreements, Baanda also helps you manage your projects. Our project management
           system is based on well-known project management philosophy and methodology. We make it easy, but
           we don't dumb it down so much that it no longer resembles a project. Baanda takes you through the
-          steps to define a project, the baseline tasks and even helps you make cost and time projections. 
+          steps to define a project, the baseline tasks and even helps you make cost and time projections.</p> 
           <div className="textspaceTop" />
         </div>
       );
@@ -92,7 +92,7 @@ class SXDashboard extends Component {
     if (btnClickNo === '5') {
       aboutAns5 = (
         <div>
-          <font color="blue">Considerable toolinh is being put in place for conflict resolutions. In Dasboard->Project, there is a button that enables conflict resolution processes. On each panel, there is a how-to button that details what the user should do or expect from. </font> 
+          <p align="justify">Considerable toolinh is being put in place for conflict resolutions. In Dasboard->Project, there is a button that enables conflict resolution processes. On each panel, there is a how-to button that details what the user should do or expect from. </p> 
           <div className="textspaceTop" />
         </div>
       );
@@ -100,7 +100,7 @@ class SXDashboard extends Component {
     if (btnClickNo === '6') {
       aboutAns6 = (
         <div>
-          <font color="blue">Baanda will enable multiple decision process. In Dashboard->project there is a button named 'decision.' That takes the user step-by-step process for coming to a decision. Baanda also will mine intelligence on the outcome of decisioning process to finetune its own methodology by learning from it. </font> xx
+          <p align="justify">Baanda will enable multiple decision process. In Dashboard->project there is a button named 'decision.' That takes the user step-by-step process for coming to a decision. Baanda also will mine intelligence on the outcome of decisioning process to finetune its own methodology by learning from it. </p> 
           <div className="textspaceTop" />
         </div>
       );
@@ -108,7 +108,7 @@ class SXDashboard extends Component {
     if (btnClickNo === '7') {
       aboutAns7 = (
         <div>
-          <font color="blue">In most prevailing socio-economic systems and almost alll legacy systems, data was fed by humans. Progressively, there would be billions of IoT devices that will work as sensors and actuators. These can be used to both get data and provide intelligence based guidance to both humans and machines to work.</font> 
+          <p align="justify">In most prevailing socio-economic systems and almost alll legacy systems, data was fed by humans. Progressively, there would be billions of IoT devices that will work as sensors and actuators. These can be used to both get data and provide intelligence based guidance to both humans and machines to work.</p> 
           <div className="textspaceTop" />
         </div>
       );

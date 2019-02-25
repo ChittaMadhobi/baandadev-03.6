@@ -354,7 +354,7 @@ class SXOverview extends Component {
 							className="btn btn-outline-light btn-sm btn-block text-left"
 							onClick={this.handlePostClick}
 						>
-							2. How does this market space work? What is Ripple Message Propagtion and it's difference
+							2. What is Ripple Message Propagtion and it's difference
 							with the broadcast mechanisms?
 						</button>
 						{aboutAns2}

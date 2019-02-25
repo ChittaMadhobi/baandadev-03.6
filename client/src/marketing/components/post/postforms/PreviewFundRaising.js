@@ -245,7 +245,7 @@ class PreviewFundRaising extends Component {
 								<div className="fixedsize-video">
 									<div className="text-center">
 										<ReactPlayer
-											url="https://s3-us-west-2.amazonaws.com/baandadev1/IMG_3193.webm"
+											url="https://s3-us-west-2.amazonaws.com/baandadev1/MktSpaceArtCrowdFund.webm"
 											className="react-player"
 											playing={false}
 											controls={true}
