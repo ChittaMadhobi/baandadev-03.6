@@ -17,27 +17,29 @@ import { showModal, hideModal } from "../../../actions/modalActions";
 import "../../../modal/css/template.css";
 import "../../../modal/css/localModal.css";
 
+import "../css/entrance.css";
+
 class Lobby extends Component {
   // If someone use URL host:port/login ... it should not take to login if already so
   constructor() {
     super();
     this.state = {
       theNook: false,
-      theSX: false
+      theSX: false,
     };
 
     this.openAlertModal = this.openAlertModal.bind(this);
   }
- 
+
   openAlertModal = param => e => {
-    console.log('param : ' + param + ' user:' + this.props.auth.user.name);
+    console.log("param : " + param + " user:" + this.props.auth.user.name);
     let msg = "This could be Jit ID: " + param;
     this.props.showModal(
       {
         open: true,
         title: "Alert - Start Here Header",
         message: msg,
-        closeModal: this.closeModal
+        closeModal: this.closeModal,
       },
       "alert"
     );
@@ -51,7 +53,7 @@ class Lobby extends Component {
         open: true,
         title: "Alert - Start Here Header",
         message: msg,
-        closeModal: this.closeModal
+        closeModal: this.closeModal,
       },
       "siteplan"
     );
@@ -80,225 +82,110 @@ class Lobby extends Component {
           </div>
         </div>
 
-        <div className="landing-inner text-dark">
+        <div className="landing-inner">
           <div className="row">
-            <div className="col-lg-2 col-md-4 col-sm-6">
-              <div className="textspaceTop" />
-              <div className="textspaceTop" />
-              {/* <div className="textspaceTop" /> */}
-              <div className="row">
-                <div className="col text-center">
-                  <div>
-                    <Link
-                      to="/baandaReception"
-                      className="btn btn-outline-info btn-block"
-                    >
-                      <strong>CHAT</strong>
-                      <div className="float-right">
-                        <i className="fas fa-comments" />
-                      </div>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-              <div className="textspaceTop" />
-              <div className="row">
-                <div className="col text-center">
-                  {/* <div className="demobuttons"> */}
-                    <button
-                      className="btn btn-dark btn-block mt-4"
-                      type="button"
-                      onClick={this.openAlertModal(ans)}
-                    >
-                      Start Here
-                      <div className="float-right">
-                        <i className="far fa-play-circle" />
-                      </div>
-                    </button>
-                  </div>
-                {/* </div> */}
-              </div>
-              <div className="row">
-                <div className="col text-center">
-                  {/* <div className="demobuttons"> */}
-                    <button
-                      className="btn btn-info btn-block mt-4"
-                      type="button"
-                      onClick={this.openSitePlanModal(ans)}
-                    >
-                      Site Map
-                      <div className="float-right">
-                        <i className="fas fa-map" />
-                      </div>
-                    </button>
-                  </div>
-                {/* </div> */}
+            <div className="col-12 col-md-6">
+              <div className="text-center">
+                <Link to="/servicexchange" className="btn btn-lobby-sx">
+                  <strong>Service Xchange</strong>
+                  <br />
+                  <font size="2"> Work & Cooperation</font>
+                </Link>
               </div>
             </div>
 
-            <div className="col-md-4 col-sm-4 col-xs-2">
-              <div className="lobbyNook">
-                <div className="row text-left text_white">
-                  <div className="col-12">
-                    <div className="headerpic">
-                      <div className="headerpicLeftPad">
-                        <span className="align-baseline-left">
-                          <h3>Nook</h3>
-                        </span>
-                      </div>
-                      <div className="textspaceTop" />
-                      <div className="textspaceTop" />
-                      <div className="headertext text-center">
-                        <ul className="list-inline">
-                          <li className="list-inline-item">
-                            {" "}
-                            <i className="fa fa-check" />
-                            &nbsp; Persona
-                          </li>
-
-                          <li className="list-inline-item">
-                            <i className="fa fa-check" />
-                            &nbsp; Tasks Mgmt.
-                          </li>
-                          <li className="list-inline-item">
-                            <i className="fa fa-check" />
-                            &nbsp; Social Circle
-                          </li>
-                          <li className="list-inline-item">
-                            <i className="fa fa-check" />
-                            &nbsp; Budget
-                          </li>
-                          <li className="list-inline-item">
-                            <i className="fa fa-check" />
-                            &nbsp; Reflections
-                          </li>
-                        </ul>
-                      </div>
-                      <div className="textspaceTop" />
-                      <div className="text-center">
-                        <div className="btn-group btn-trigger">
-                          <Link to="/nook" className="btn btn-lg btn-info">
-                            <strong>Enter & Engage</strong>
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-md-4 col-sm-4 col-xs-2">
-              <div className="lobbySX">
-                <div className="row text-left text_white">
-                  <div className="col-12">
-                    <div className="headerpic">
-                      <div className="headerpicLeftPad">
-                        <span className="align-baseline-left">
-                          <h3>Service Xchange</h3>
-                        </span>
-                      </div>
-                      <div className="textspaceTop" />
-                      <div className="textspaceTop" />
-                      <div className="headertext text-center">
-                        <ul className="list-inline">
-                          <li className="list-inline-item">
-                            {" "}
-                            <i className="fa fa-check" />
-                            &nbsp; Post
-                          </li>
-                          <li className="list-inline-item">
-                            <i className="fa fa-check" />
-                            &nbsp; Get matched
-                          </li>
-                          <li className="list-inline-item">
-                            <i className="fa fa-check" />
-                            &nbsp; Engage
-                          </li>
-                          <li className="list-inline-item">
-                            <i className="fa fa-check" />
-                            &nbsp; Co-work
-                          </li>
-                          <li className="list-inline-item">
-                            <i className="fa fa-check" />
-                            &nbsp; Your Dashboard
-                          </li>
-                        </ul>
-                      </div>
-                      <div className="textspaceTop" />
-                      <div className="text-center">
-                        <div className="btn-group btn-trigger">
-                          <Link
-                            to="/servicexchange"
-                            className="btn btn-lg btn-info"
-                          >
-                            <strong>Enter & Engage</strong>
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-lg-2 col-md-4 col-sm-6">
-              <div className="textspaceTop" />
-              <div className="textspaceTop" />
-              {/* <div className="textspaceTop" /> */}
-              <div className="row">
-                <div className="col text-center">
-                  <div>
-                    <Link
-                      to="/marketing"
-                      className="btn btn-outline-primary btn-block"
-                    >
-                      <strong>Marketspace</strong>
-                      <div className="float-right">
-                        <i className="fas fa-envelope" />
-                      </div>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-              <div className="textspaceTop" />
-              <div className="textspaceTop" />
-              <div className="row">
-                <div className="col text-center">
-                  <div>
-                    <Link
-                      to="/cooperation"
-                      className="btn btn-outline-primary btn-block"
-                    >
-                      <strong>Co-Living </strong>
-                      <div className="float-right">
-                        <i className="fas fa-home" />
-                      </div>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-              <div className="textspaceTop" />
-              <div className="textspaceTop" />
-              <div className="row">
-                <div className="col text-center">
-                  <div>
-                    <Link
-                      to="/blockchain"
-                      className="btn btn-outline-primary btn-block"
-                    >
-                      <strong>Agreement</strong>
-                      <div className="float-right">
-                        <i className="fas fa-link" />
-                      </div>
-                    </Link>
-                  </div>
-                </div>
+            <div className="col-12 col-md-6">
+              <div className="text-center">
+                <Link to="/cooperation" className="btn btn-lobby-coliving">
+                  <strong>Co-Living </strong>
+                  <br />
+                  <font size="2"> Shared Intimacy Economy</font>
+                </Link>
               </div>
             </div>
           </div>
         </div>
-        {/* </div> */}
+
+        <div className="landing-inner">
+          <div className="row">
+            <div className="col-12 col-md-12">
+              <div className="text-center">
+                <Link to="/blockchain" className="btn btn-lobby-agreement">
+                  <strong>Agreement</strong>
+                  <br />
+                  <font size="2">Dynamic & Immutable</font>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="landing-inner">
+          <div className="row">
+            <div className="col-12 col-md-6">
+              <div className="text-center">
+                <Link to="/nook" className="btn btn-lobby-nook">
+                  <strong>Nook</strong>
+                  <br />
+                  <font size="2"> Personal Life</font>
+                </Link>
+              </div>
+            </div>
+
+            <div className="col-12 col-md-6">
+              <div className="text-center">
+                <Link
+                  to="/marketing"
+                  className="btn btn-lobby-marketspace"
+                >
+                  <strong>Marketspace</strong>
+                  <br />
+                  <font size="2">Reachout Fund Invest </font>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="lobby-spaces" />
+        <div className="landing-inner">
+          <div className="row">
+            <div className="col-12 text-center">
+              <button
+                className="btn-lobby-starthere"
+                type="button"
+                onClick={this.openAlertModal(ans)}
+              >
+                <b>Start Here</b>
+              </button>
+
+              {/* <button
+                className="btn-lobby-starthere"
+                type="button"
+                onClick={this.openSitePlanModal(ans)}
+              >
+                Site Map
+              </button> */}
+              <button className="btn-lobby-starthere">
+                <Link to="/baandaReception">
+                  <font color="white"><b>Chat</b></font>
+                </Link>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div className="landing-inner">
+          <div className="row">
+            <div className="col-12 col-md-12">
+              <div className="text-center">
+                <font size="2" color="#631102">For a better experience, this app works best on larger screens such as laptops, tablets and emerging foldable-phones. </font>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+
         <ModalContainer />
         <div className="footerspace" />
       </div>
@@ -307,11 +194,11 @@ class Lobby extends Component {
 }
 
 Lobby.propTypes = {
-  auth: PropTypes.object.isRequired
+  auth: PropTypes.object.isRequired,
 };
 
 const mapStateToProps = state => ({
-  auth: state.auth
+  auth: state.auth,
 });
 
 const mapDispatchToProps = dispatch => ({
@@ -321,7 +208,7 @@ const mapDispatchToProps = dispatch => ({
       "modalProps:" + JSON.stringify(modalProps) + "  |modalType:" + modalType
     );
     dispatch(showModal({ modalProps, modalType }));
-  }
+  },
 });
 
 export default connect(
