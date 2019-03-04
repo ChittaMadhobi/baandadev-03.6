@@ -177,7 +177,7 @@ class VedioMessage extends Component {
               </font>
             ) : (
               <font color="#e59679">
-                <b>rejectedReason</b>
+                <b>{rejectedReason}</b>
               </font>
             )}
           </div>
