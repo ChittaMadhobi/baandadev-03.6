@@ -13,11 +13,11 @@ class SXMessageBody extends Component {
     this.state = {
       receiveMessages: true,
       sendMessages: false,
-      sendvideo: false,
+      sendVedio: false,
       sendAudio: false,
       sendText: false,
       sendDccs: false,
-      recvideo: false,
+      recVedio: false,
       recAudio: false,
       recText: false,
       recDccsReq: false,
@@ -28,22 +28,22 @@ class SXMessageBody extends Component {
     this.switchToSend = this.switchToSend.bind(this);
     this.switchToReceive = this.switchToReceive.bind(this);
 
-    this.switchToSendvideo = this.switchToSendvideo.bind(this);
+    this.switchToSendVedio = this.switchToSendVedio.bind(this);
     this.switchToSendAudio = this.switchToSendAudio.bind(this);
     this.switchToSendText = this.switchToSendText.bind(this);
     this.switchToSendDccs = this.switchToSendDccs.bind(this);
     this.switchToSenderProfile = this.switchToSenderProfile.bind(this);
   }
 
-  switchToSendvideo = () => {
+  switchToSendVedio = () => {
     this.setState({
       receiveMessages: false,
       sendMessages: true,
-      sendvideo: true,
+      sendVedio: true,
       sendAudio: false,
       sendText: false,
       sendDccs: false,
-      recvideo: false,
+      recVedio: false,
       recAudio: false,
       recText: false,
       recDccsReq: false,
@@ -56,11 +56,11 @@ class SXMessageBody extends Component {
     this.setState({
       receiveMessages: false,
       sendMessages: true,
-      sendvideo: false,
+      sendVedio: false,
       sendAudio: true,
       sendText: false,
       sendDccs: false,
-      recvideo: false,
+      recVedio: false,
       recAudio: false,
       recText: false,
       recDccsReq: false,
@@ -72,11 +72,11 @@ class SXMessageBody extends Component {
     this.setState({
       receiveMessages: false,
       sendMessages: true,
-      sendvideo: false,
+      sendVedio: false,
       sendAudio: false,
       sendText: true,
       sendDccs: false,
-      recvideo: false,
+      recVedio: false,
       recAudio: false,
       recText: false,
       recDccsReq: false,
@@ -89,11 +89,11 @@ class SXMessageBody extends Component {
     this.setState({
       receiveMessages: false,
       sendMessages: true,
-      sendvideo: false,
+      sendVedio: false,
       sendAudio: false,
       sendText: false,
       sendDccs: true,
-      recvideo: false,
+      recVedio: false,
       recAudio: false,
       recText: false,
       recDccsReq: false,
@@ -106,11 +106,11 @@ class SXMessageBody extends Component {
     this.setState({
       receiveMessages: false,
       sendMessages: true,
-      sendvideo: false,
+      sendVedio: false,
       sendAudio: false,
       sendText: false,
       sendDccs: false,
-      recvideo: false,
+      recVedio: false,
       recAudio: false,
       recText: false,
       recDccsReq: false,
@@ -123,10 +123,10 @@ class SXMessageBody extends Component {
     this.setState({
       receiveMessages: true,
       sendMessages: false,
-      sendvideo: false,
+      sendVedio: false,
       sendAudio: false,
       sendDccs: false,
-      recvideo: false,
+      recVedio: false,
       recAudio: false,
       recText: false,
       recDccsReq: false,
@@ -140,11 +140,11 @@ class SXMessageBody extends Component {
     this.setState({
       receiveMessages: true,
       sendMessages: false,
-      sendvideo: false,
+      sendVedio: false,
       sendAudio: false,
       sendText: false,
       sendDccs: false,
-      recvideo: false,
+      recVedio: false,
       recAudio: false,
       recText: true,
       recDccsReq: false,
@@ -157,11 +157,11 @@ class SXMessageBody extends Component {
     this.setState({
       receiveMessages: true,
       sendMessages: false,
-      sendvideo: false,
+      sendVedio: false,
       sendAudio: false,
       sendText: false,
       sendDccs: false,
-      recvideo: true,
+      recVedio: true,
       recAudio: false,
       recText: false,
       recDccsReq: false,
@@ -174,11 +174,11 @@ class SXMessageBody extends Component {
     this.setState({
       receiveMessages: true,
       sendMessages: false,
-      sendvideo: false,
+      sendVedio: false,
       sendAudio: false,
       sendText: false,
       sendDccs: false,
-      recvideo: false,
+      recVedio: false,
       recAudio: true,
       recText: false,
       recDccsReq: false,
@@ -191,11 +191,11 @@ class SXMessageBody extends Component {
     this.setState({
       receiveMessages: true,
       sendMessages: false,
-      sendvideo: false,
+      sendVedio: false,
       sendAudio: false,
       sendText: false,
       sendDccs: false,
-      recvideo: false,
+      recVedio: false,
       recAudio: false,
       recText: false,
       recDccsReq: true,
@@ -208,11 +208,11 @@ class SXMessageBody extends Component {
     this.setState({
       receiveMessages: true,
       sendMessages: false,
-      sendvideo: false,
+      sendVedio: false,
       sendAudio: false,
       sendText: false,
       sendDccs: false,
-      recvideo: false,
+      recVedio: false,
       recAudio: false,
       recText: false,
       recDccsReq: false,
@@ -225,11 +225,11 @@ class SXMessageBody extends Component {
     this.setState({
       receiveMessages: true,
       sendMessages: false,
-      sendvideo: false,
+      sendVedio: false,
       sendAudio: false,
       sendText: false,
       sendDccs: false,
-      recvideo: false,
+      recVedio: false,
       recAudio: false,
       recText: false,
       recDccsReq: false,
@@ -279,7 +279,7 @@ class SXMessageBody extends Component {
           </div>
         </button>
       );
-    } else if (messageType === 'video') {
+    } else if (messageType === 'vedio') {
       recButton = (
         <button
           className="btn button-message-ops"
@@ -385,7 +385,7 @@ class SXMessageBody extends Component {
             {/* <b>Receive Ops: </b> */}
             <button
               className="btn button-message-ops"
-              onClick={this.switchToSendvideo}
+              onClick={this.switchToSendVedio}
             >
               Video&nbsp;
               <div className="float-right">
@@ -429,10 +429,10 @@ class SXMessageBody extends Component {
     }
 
     if (this.state.sendMessages) {
-      if (this.state.sendvideo) {
+      if (this.state.sendVedio) {
         msgpanel = (
           <div className="message-panel-size text-center">
-            <SendMessages msg="video" />
+            <SendMessages msg="vedio" />
           </div>
         );
       } else if (this.state.sendAudio) {
@@ -457,10 +457,10 @@ class SXMessageBody extends Component {
     }
 
     if (this.state.receiveMessages) {
-      if (this.state.recvideo) {
+      if (this.state.recVedio) {
         msgpanel = (
           <div className="message-panel-size text-center">
-            <ReceiveMessages msg="video" />
+            <ReceiveMessages msg="vedio" />
           </div>
         );
       } else if (this.state.recAudio) {
